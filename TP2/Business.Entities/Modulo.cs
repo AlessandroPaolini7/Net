@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EstructurasIteracion
+namespace Business.Entities
 {
-    class Program
+    public class Modulo: BusinessEntity
     {
-        static void Main(string[] args)
-        {
+        public string Descripcion { get; set; }
 
-        }
     }
 }
+

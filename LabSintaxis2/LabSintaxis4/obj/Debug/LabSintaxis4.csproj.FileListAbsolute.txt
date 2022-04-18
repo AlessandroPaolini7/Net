@@ -1,7 +1,0 @@
-C:\Users\bauti\source\repos\LabSintaxis2\LabSintaxis4\bin\Debug\LabSintaxis4.exe.config
-C:\Users\bauti\source\repos\LabSintaxis2\LabSintaxis4\bin\Debug\LabSintaxis4.exe
-C:\Users\bauti\source\repos\LabSintaxis2\LabSintaxis4\bin\Debug\LabSintaxis4.pdb
-C:\Users\bauti\source\repos\LabSintaxis2\LabSintaxis4\obj\Debug\LabSintaxis4.csproj.AssemblyReference.cache
-C:\Users\bauti\source\repos\LabSintaxis2\LabSintaxis4\obj\Debug\LabSintaxis4.csproj.CoreCompileInputs.cache
-C:\Users\bauti\source\repos\LabSintaxis2\LabSintaxis4\obj\Debug\LabSintaxis4.exe
-C:\Users\bauti\source\repos\LabSintaxis2\LabSintaxis4\obj\Debug\LabSintaxis4.pdb
