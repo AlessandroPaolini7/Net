@@ -21,6 +21,8 @@ namespace Business.Entities
         public enum TipoPersonas
         {
             //probando
+            //probando2
+
         }
 
 
