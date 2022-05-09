@@ -20,9 +20,9 @@ namespace Business.Entities
 
         public enum TipoPersonas
         {
-            //probando
-            //probando2
-            //probando3
+            Docente, 
+            Alumno,
+            Administrador
         }
 
 
