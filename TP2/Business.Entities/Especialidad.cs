@@ -8,6 +8,7 @@ namespace Business.Entities
 {
     public class Especialidad : BusinessEntity
     {
+        public int IDEspecialidad { get; set; }
         public string Descripcion { get; set; }
     }
 }

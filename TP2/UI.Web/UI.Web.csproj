@@ -89,6 +89,16 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business.Entities\Business.Entities.csproj">
+      <Project>{c2633100-68a6-4d67-8b05-089e1b5aeec2}</Project>
+      <Name>Business.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.Logic\Business.Logic.csproj">
+      <Project>{85afcd1e-7ce4-4fd0-b2c5-c8c696a4e619}</Project>
+      <Name>Business.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
