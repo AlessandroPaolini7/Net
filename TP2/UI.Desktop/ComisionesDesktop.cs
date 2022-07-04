@@ -14,6 +14,7 @@ namespace UI.Desktop
     public partial class ComisionesDesktop : UI.Desktop.ApplicationForm
     {
         Comision ComisionActual = new Comision();
+        PlanLogic PlanNegocio = new PlanLogic();
         public ComisionesDesktop()
         {
             InitializeComponent();
@@ -100,8 +101,23 @@ namespace UI.Desktop
 
         public override bool Validar()
         {
-            if ((this.txtDescripcion == null) | (this.txtIDPlan.Text == "")| (this.txtAnioEspecialidad.Text == "")) return false;
-            else return true;
+            if ((this.txtDescripcion.Text != "") & (this.txtIDPlan.Text != "")& (this.txtAnioEspecialidad.Text != ""))
+            {
+                var PlanActual = PlanNegocio.GetOne(Convert.ToInt32(txtIDPlan.Text));
+                if (PlanActual != null) return true;
+                else return false;
+            }
+            return false;
+
+            /*
+            if ((this.txtDescripcion.Text != "") & (this.txtIDEspecialidad.Text != ""))
+            {
+                var EspecialidadActual = EspecialidadNegocio.GetOne(Convert.ToInt32(txtIDEspecialidad.Text));
+                if (EspecialidadActual != null) return true;
+                else return false;
+            }
+            return false;
+            */
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)

@@ -69,6 +69,7 @@ namespace Data.Database
                     esp.IDEspecialidad = (int)drEspecialidades["id_especialidad"];
                     esp.Descripcion = (string)drEspecialidades["desc_especialidad"];
                 }
+                else esp = null;
                 drEspecialidades.Close();
             }
             catch (Exception ex)
