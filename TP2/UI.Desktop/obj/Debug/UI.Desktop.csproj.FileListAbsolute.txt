@@ -25,3 +25,30 @@ C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\UI.Desktop\obj\Debug\UI.Desk
 C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\UI.Desktop\obj\Debug\UI.Desktop.pdb
 C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\UI.Desktop\obj\Debug\UI.Desktop.formComision.resources
 C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\UI.Desktop\obj\Debug\UI.Desktop.ComisionesDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\UI.Desktop.pdb
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Business.Entities.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Business.Logic.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Data.Database.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Business.Entities.pdb
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Business.Logic.pdb
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Data.Database.pdb
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.AssemblyReference.cache
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.ApplicationForm.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.ComisionesDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.EspecialidadesDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formComision.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formEspecialidad.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formLista.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formLogin.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formMain.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formPlan.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.PlanesDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.Properties.Resources.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.UsuariosDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.GenerateResource.cache
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.CoreCompileInputs.cache
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.CopyComplete
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.exe
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.pdb

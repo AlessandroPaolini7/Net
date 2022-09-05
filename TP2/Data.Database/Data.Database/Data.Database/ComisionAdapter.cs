@@ -69,6 +69,7 @@ namespace Data.Database
                     comision.Descripcion = (string)drComisiones["desc_comision"];
                     comision.IDPlan = (int)drComisiones["id_plan"];
                 }
+                else comision = null;
                 drComisiones.Close();
             }
             catch (Exception ex)

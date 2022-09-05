@@ -13,6 +13,7 @@ namespace UI.Desktop
     public partial class PlanesDesktop : UI.Desktop.ApplicationForm
     {
         Plan PlanActual = new Plan();
+        EspecialidadLogic EspecialidadNegocio = new EspecialidadLogic();
         public PlanesDesktop()
         {
             InitializeComponent();
@@ -91,8 +92,16 @@ namespace UI.Desktop
         }
         public override bool Validar()
         {
-            if ((this.txtDescripcion == null)|(this.txtIDEspecialidad.Text == "")) return false;
-            else return true;
+       
+            if ((this.txtDescripcion.Text != "")&(this.txtIDEspecialidad.Text != ""))
+            {
+                var EspecialidadActual = EspecialidadNegocio.GetOne(Convert.ToInt32(txtIDEspecialidad.Text));
+                if (EspecialidadActual != null) return true;
+                else return false;
+            }
+            return false;
+            
+
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
