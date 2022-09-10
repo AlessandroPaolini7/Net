@@ -11,9 +11,17 @@ namespace UI.Web
 {
     public partial class Especialidades : formApplication
     {
-        protected new void Page_Load(object sender, EventArgs e)
+        EspecialidadLogic _Esplogic;
+        private EspecialidadLogic Esplogic
         {
-            if (!this.IsPostBack) this.LoadGrid();
+            get
+            {
+                if (_Esplogic == null)
+                {
+                    _Esplogic = new EspecialidadLogic();
+                }
+                return _Esplogic;
+            }
         }
         public FormModes FormMode
         {
@@ -26,6 +34,7 @@ namespace UI.Web
                 this.ViewState["FormMode"] = value;
             }
         }
+
 
         protected int SelectedID
         {
@@ -44,32 +53,24 @@ namespace UI.Web
             get { return (this.SelectedID != 0); }
         }
 
-        EspecialidadLogic _Esplogic;
-        private EspecialidadLogic Esplogic
-        {
-            get
-            {
-                if (_Esplogic == null)
-                {
-                    _Esplogic = new EspecialidadLogic();
-                }
-                return _Esplogic;
-            }
-        }
-
-
 
         private Especialidad Entity { get; set; }
 
         private void LoadGrid()
         {
-            this.gridView.DataSource = this.Esplogic.GetAll();
-            gridView.DataBind();
+            this.gridViewEsp.DataSource = this.Esplogic.GetAll();
+            gridViewEsp.DataBind();
+        }
+        protected new void Page_Load(object sender, EventArgs e)
+        {
+            if (!this.IsPostBack) this.LoadGrid();
         }
 
         protected void gridView_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.SelectedID = (int)this.gridView.SelectedValue;
+            var row = gridViewEsp.SelectedRow;
+            this.SelectedID =  Convert.ToInt32(row.Cells[0].Text);
+            // this.SelectedID = (int)this.gridViewEsp.SelectedValue;
         }
 
         private void LoadForm(int id)

@@ -3,11 +3,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bodyContentPlaceHolder" runat="server">
     <asp:Panel ID="gridPanel" runat="server">
-        <asp:GridView ID="gridView" runat="server" AutoGenerateColumns="false" 
+        <asp:GridView ID="gridViewEsp" runat="server" AutoGenerateColumns="false" 
             SelectedRowStyle-BackColor="Black"
              SelectedRowStyle-ForeColor="White"
             DataKeyNames="ID" OnSelectedIndexChanged="gridView_SelectedIndexChanged">
             <Columns>
+                <asp:BoundField HeaderText="IDEspecialidad" DataField="IDEspecialidad" />
                 <asp:BoundField HeaderText="Descripcion" DataField="Descripcion" />
                 <asp:CommandField SelectText="Seleccionar" ShowSelectButton="true" />
             </Columns>
