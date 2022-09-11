@@ -160,5 +160,67 @@ namespace UI.Web
         {
             this.descripcionTextBox.Text = string.Empty;
         }
+        protected void editarButton_Click(object sender, EventArgs e)
+        {
+            if (this.IsEntitySelected)
+            {
+                this.formPanel.Visible = true;
+                this.FormMode = FormModes.Modificacion;
+                this.EnableForm(true);
+                this.LoadForm(this.SelectedID);
+            }
+        }
+
+        protected void eliminarButton_Click(object sender, EventArgs e)
+        {
+
+            if (this.IsEntitySelected)
+            {
+                this.formPanel.Visible = true;
+                this.FormMode = FormModes.Baja;
+                this.EnableForm(false);
+                this.LoadForm(this.SelectedID);
+            }
+        }
+
+        protected void nuevoButton_Click(object sender, EventArgs e)
+        {
+            this.formPanel.Visible = true;
+            this.FormMode = FormModes.Alta;
+            this.ClearForm();
+            this.EnableForm(true);
+        }
+
+        protected void aceptarButton_Click(object sender, EventArgs e)
+        {
+            switch (this.FormMode)
+            {
+                case FormModes.Baja:
+                    this.DeleteEntity(this.SelectedID);
+                    this.LoadGrid();
+                    break;
+                case FormModes.Modificacion:
+                    this.Entity = new Especialidad();
+                    this.Entity.IDEspecialidad = this.SelectedID;
+                    this.Entity.State = BusinessEntity.States.Modified;
+                    this.LoadEntity(this.Entity);
+                    this.SaveEntity(this.Entity);
+                    this.LoadGrid();
+                    break;
+                case FormModes.Alta:
+                    this.Entity = new Especialidad();
+                    this.LoadEntity(this.Entity);
+                    this.SaveEntity(this.Entity);
+                    this.LoadGrid();
+                    break;
+            }
+
+            this.formPanel.Visible = false;
+        }
+
+        protected void cancelarButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

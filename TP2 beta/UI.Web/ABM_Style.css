@@ -1,0 +1,128 @@
+﻿body {
+}
+h1 {
+    font: bold 32px Times;
+    color: #666;
+    text-align: center;
+    padding: 20px 0;
+}
+.myGridClass {
+    width: 100%;
+    /*this will be the color of the odd row*/
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+}
+
+    /*data elements*/
+    .myGridClass td {
+        font-family: sans-serif;
+        padding: 2px;
+        border: solid 1px #c1c1c1;
+        color: #717171;
+    }
+
+    /*header elements*/
+    .myGridClass th {
+        font-family: sans-serif;
+        padding: 4px 2px;
+        color: #fff;
+        background: #424242;
+        border-left: solid 1px #525252;
+        font-size: 0.9em;
+    }
+
+    /*his will be the color of even row*/
+    .myGridClass .myAltRowClass {
+        background: #fcfcfc repeat-x top;
+    }
+
+    /*and finally, we style the pager on the bottom*/
+    .myGridClass .myPagerClass {
+        background: #424242;
+    }
+
+        .myGridClass .myPagerClass table {
+            margin: 5px 0;
+        }
+
+        .myGridClass .myPagerClass td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #666;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .myGridClass .myPagerClass a {
+            color: #666;
+            text-decoration: none;
+        }
+
+            .myGridClass .myPagerClass a:hover {
+                color: #000;
+                text-decoration: none;
+            }
+
+.gridActionsPanel input[type="submit"] {
+    font-family: sans-serif;
+    margin-left: 2px;
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #424242;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+    .gridActionsPanel input[type="submit"]:hover, .formsActionsPanel input[type="submit"]:hover {
+        cursor: pointer;
+        background: #ffc107;
+        color: #000;
+    }
+.formPanel {
+    font-family: sans-serif;
+}
+
+    .formPanel .label {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        display: block;
+    }
+
+    .formPanel input {
+        width: 40%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+
+    .formPanel input[type="text"], .formPanel input[type="password"] {
+        border: none;
+        border-bottom: 1px solid #000;
+        background: transparent;
+        outline: none;
+        height: 30px;
+        color: #525252;
+        font-size: 16px;
+    }
+    .formPanel input:hover {
+        border: 1px solid black;
+    }
+
+.formsActionsPanel input[type="submit"] {
+    width: 20%;
+    font-family: sans-serif;
+    margin-left: 2px;
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #424242;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}

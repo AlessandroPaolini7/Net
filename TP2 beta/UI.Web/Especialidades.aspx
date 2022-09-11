@@ -1,9 +1,10 @@
 ﻿<%@ Page Title="Especialidades" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Especialidades.aspx.cs" Inherits="UI.Web.Especialidades" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <link href="ABM_Style.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bodyContentPlaceHolder" runat="server">
     <asp:Panel ID="gridPanel" runat="server">
-        <asp:GridView ID="gridViewEsp" runat="server" AutoGenerateColumns="false" 
+        <asp:GridView ID="gridViewEsp" runat="server" AutoGenerateColumns="false" GridLines="None" CssClass="myGridClass" AlternatingRowStyle-CssClass="alt" 
             SelectedRowStyle-BackColor="Black"
              SelectedRowStyle-ForeColor="White"
             DataKeyNames="ID" OnSelectedIndexChanged="gridView_SelectedIndexChanged">
@@ -13,18 +14,21 @@
                 <asp:CommandField SelectText="Seleccionar" ShowSelectButton="true" />
             </Columns>
         </asp:GridView>
-        <asp:Panel ID="gridActionsPanel" runat="server">
-            <asp:LinkButton ID="editarLinkButton" runat="server" OnClick="editarLinkButton_Click">Editar</asp:LinkButton>
-            <asp:LinkButton ID="eliminarLinkButton" runat="server" OnClick="eliminarLinkButton_Click">Eliminar</asp:LinkButton>
-            <asp:LinkButton ID="nuevoLinkButton" runat="server" OnClick="nuevoLinkButton_Click">Nuevo</asp:LinkButton>
+        <asp:Panel CssClass="gridActionsPanel" ID="gridActionsPanel" runat="server">
+            <asp:Button ID="editarButton" Text="Editar" runat="server" OnClick="editarButton_Click" />
+            <asp:Button ID="eliminarButton" Text="Eliminar" runat="server" OnClick="eliminarButton_Click" />
+            <asp:Button ID="nuevoButton" Text="Nuevo" runat="server" OnClick="nuevoButton_Click" />
+            <br />
+            <br />
+            <br />
         </asp:Panel>
-        <asp:Panel ID="formPanel" Visible="false" runat="server">
-            <asp:Label ID="descripcionLabel" runat="server" Text="Especialidad: "></asp:Label>
+        <asp:Panel CssClass="formPanel" ID="formPanel" Visible="false" runat="server">
+            <asp:Label CssClass="label" ID="descripcionLabel" runat="server" Text="Especialidad: "></asp:Label>
             <asp:TextBox ID="descripcionTextBox" runat="server"></asp:TextBox>
             <br />
-            <asp:Panel ID="formsActionsPanel" runat="server">
-                <asp:LinkButton ID="aceptarLinkButton" runat="server" OnClick="aceptarLinkButton_Click">Aceptar</asp:LinkButton>
-                <asp:LinkButton ID="cancelarLinkButton" runat="server">Cancelar</asp:LinkButton>
+            <asp:Panel CssClass="formsActionsPanel" ID="formsActionsPanel" runat="server">
+                <asp:button ID="aceptarButton" runat="server" Text="Aceptar" OnClick="aceptarButton_Click"/>
+                <asp:button ID="cancelarButton" runat="server" Text="Cancelar" OnClick="cancelarButton_Click"/>
             </asp:Panel>
         </asp:Panel>
     </asp:Panel>

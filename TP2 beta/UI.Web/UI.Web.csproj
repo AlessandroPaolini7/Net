@@ -69,10 +69,11 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Especialidades.aspx" />
+    <Content Include="ABM_Style.css" />
     <Content Include="formApplication.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
-    <Content Include="Style.css" />
+    <Content Include="Login_Style.css" />
     <Content Include="Usuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

@@ -42,31 +42,31 @@ namespace UI.Web
         protected global::System.Web.UI.WebControls.Panel gridActionsPanel;
 
         /// <summary>
-        /// Control editarLinkButton.
+        /// Control editarButton.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton editarLinkButton;
+        protected global::System.Web.UI.WebControls.Button editarButton;
 
         /// <summary>
-        /// Control eliminarLinkButton.
+        /// Control eliminarButton.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton eliminarLinkButton;
+        protected global::System.Web.UI.WebControls.Button eliminarButton;
 
         /// <summary>
-        /// Control nuevoLinkButton.
+        /// Control nuevoButton.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton nuevoLinkButton;
+        protected global::System.Web.UI.WebControls.Button nuevoButton;
 
         /// <summary>
         /// Control formPanel.
@@ -105,21 +105,21 @@ namespace UI.Web
         protected global::System.Web.UI.WebControls.Panel formsActionsPanel;
 
         /// <summary>
-        /// Control aceptarLinkButton.
+        /// Control aceptarButton.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton aceptarLinkButton;
+        protected global::System.Web.UI.WebControls.Button aceptarButton;
 
         /// <summary>
-        /// Control cancelarLinkButton.
+        /// Control cancelarButton.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton cancelarLinkButton;
+        protected global::System.Web.UI.WebControls.Button cancelarButton;
     }
 }
