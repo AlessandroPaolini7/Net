@@ -57,7 +57,7 @@
             <br />
             <asp:Panel CssClass="formsActionsPanel" ID="formsActionsPanel" runat="server">
                 <asp:button ID="aceptarButton" runat="server" Text="Aceptar" OnClick="aceptarButton_Click"/>
-                <asp:button ID="cancelarButton" runat="server" Text="Cancelar" OnClick="cancelarButton_Click"/>
+                <asp:button ID="cancelarButton" runat="server" Text="Cancelar" OnClick="cancelarButton_Click" CausesValidation="False"/>
                 <asp:ValidationSummary ID="validationSummary" runat="server" ForeColor="#CC0066" />
             </asp:Panel>
         </asp:Panel>
