@@ -119,21 +119,21 @@ namespace UI.Web
 
         }
 
-        private void LoadEntity(Business.Entities.Curso curso)
+        private void LoadEntity()
         {
-            curso.AnioCalendario = Convert.ToInt32(this.anioCalendarioTextBox.Text);
-            curso.Cupo = Convert.ToInt32(this.cupoTextBox.Text);
+            this.Entity.AnioCalendario = Convert.ToInt32(this.anioCalendarioTextBox.Text);
+            this.Entity.Cupo = Convert.ToInt32(this.cupoTextBox.Text);
 
             MateriaLogic materiaLogic = new MateriaLogic();
-            curso.Materia = materiaLogic.GetOne(Convert.ToInt32(this.MateriaDDL.SelectedValue));
+            this.Entity.Materia = materiaLogic.GetOne(Convert.ToInt32(this.MateriaDDL.SelectedValue));
 
             ComisionLogic comisionLogic = new ComisionLogic();
-            curso.Comision =  comisionLogic.GetOne(Convert.ToInt32(this.ComisionDDL.SelectedValue));
+            this.Entity.Comision =  comisionLogic.GetOne(Convert.ToInt32(this.ComisionDDL.SelectedValue));
         }
 
-        private void SaveEntity(Business.Entities.Curso curso)
+        private void SaveEntity()
         {
-            this.CursoLogic.Save(curso);
+            this.CursoLogic.Save(this.Entity);
         }
 
         protected void aceptarLinkButton_Click(object sender, EventArgs e)
@@ -232,18 +232,19 @@ namespace UI.Web
                 case FormModes.Alta:
                     {
                         this.Entity = new Curso();
-                        this.LoadEntity(this.Entity);
-                        this.SaveEntity(this.Entity);
+                        this.Entity.State = BusinessEntity.States.New;
+                        this.LoadEntity();
+                        this.SaveEntity();
                         this.LoadGrid();
                         break;
                     }
                 case FormModes.Modificacion:
                     {
                         this.Entity = new Curso();
-                        this.Entity.ID = this.SelectedID;
+                        this.Entity.IDCurso = this.SelectedID;
                         this.Entity.State = BusinessEntity.States.Modified;
-                        this.LoadEntity(this.Entity);
-                        this.SaveEntity(this.Entity);
+                        this.LoadEntity();
+                        this.SaveEntity();
                         this.LoadGrid();
                         break;
                     }
@@ -264,7 +265,5 @@ namespace UI.Web
             formPanel.Visible = false;
             LoadGrid();
         }
-
-        
     }
 }

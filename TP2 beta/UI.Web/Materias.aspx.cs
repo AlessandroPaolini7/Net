@@ -106,18 +106,18 @@ namespace UI.Web
            
         }
 
-        private void LoadEntity(Business.Entities.Materia materia)
+        private void LoadEntity()
         {
-            materia.Descripcion = this.descripcionTextBox.Text;
-            materia.HorasSemanales = Convert.ToInt32(this.hsSemanalesTextBox.Text);
-            materia.HorasTotales = Convert.ToInt32(this.hsTotalesTextBox.Text);
+            Entity.Descripcion = this.descripcionTextBox.Text;
+            Entity.HorasSemanales = Convert.ToInt32(this.hsSemanalesTextBox.Text);
+            Entity.HorasTotales = Convert.ToInt32(this.hsTotalesTextBox.Text);
             PlanLogic planLogic = new PlanLogic();
-            materia.Plan = planLogic.GetOne(Convert.ToInt32(this.PlanDDL.SelectedValue));
+            Entity.Plan = planLogic.GetOne(Convert.ToInt32(this.PlanDDL.SelectedValue));
         }
 
-        private void SaveEntity(Business.Entities.Materia materia)
+        private void SaveEntity()
         {
-            this.MateriaLogic.Save(materia);
+            this.MateriaLogic.Save(this.Entity);
         }
 
         protected void aceptarLinkButton_Click(object sender, EventArgs e)
@@ -205,18 +205,19 @@ namespace UI.Web
                 case FormModes.Alta:
                     {
                         this.Entity = new Materia();
-                        this.LoadEntity(this.Entity);
-                        this.SaveEntity(this.Entity);
+                        this.Entity.State = BusinessEntity.States.New;
+                        this.LoadEntity();
+                        this.SaveEntity();
                         this.LoadGrid();
                         break;
                     }
                 case FormModes.Modificacion:
                     {
                         this.Entity = new Materia();
-                        this.Entity.ID = this.SelectedID;
+                        this.Entity.IDMateria = this.SelectedID;
                         this.Entity.State = BusinessEntity.States.Modified;
-                        this.LoadEntity(this.Entity);
-                        this.SaveEntity(this.Entity);
+                        this.LoadEntity();
+                        this.SaveEntity();
                         this.LoadGrid();
                         break;
                     }
