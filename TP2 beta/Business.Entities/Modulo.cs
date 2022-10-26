@@ -8,8 +8,8 @@ namespace Business.Entities
 {
     public class Modulo: BusinessEntity
     {
+        public int IDModulo { get; set; }
         public string Descripcion { get; set; }
-
     }
 }
 

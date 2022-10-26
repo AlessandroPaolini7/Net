@@ -8,9 +8,10 @@ namespace Business.Entities
 {
     public class DocenteCurso: BusinessEntity
     {
+        public int IDDictado { get; set; }
         public TipoCargos Cargo { get; set; }
-        public int IDCurso { get; set; }
-        public int IDdocente { get; set; }
+        public Curso Curso { get; set; }
+        public Personas Docente { get; set; }
 
         public enum TipoCargos
         {
