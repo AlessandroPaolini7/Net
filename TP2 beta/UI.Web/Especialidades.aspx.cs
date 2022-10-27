@@ -145,7 +145,16 @@ namespace UI.Web
 
         private void DeleteEntity(int id)
         {
-            this.Esplogic.Delete(id);
+            try
+            {
+                this.Esplogic.Delete(id);
+            }
+            catch (Exception ex)
+            {
+
+                this.Response.Write(ex.Message);
+            }
+            
         }
 
         protected void nuevoLinkButton_Click(object sender, EventArgs e)

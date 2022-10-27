@@ -157,7 +157,16 @@ namespace UI.Web
 
         private void DeleteEntity(int id)
         {
-            this.CursoLogic.Delete(id);
+            try
+            {
+                this.CursoLogic.Delete(id);
+            }
+            catch (Exception ex)
+            {
+
+                this.Response.Write(ex.Message);
+            }
+            
         }
 
         protected void nuevoLinkButton_Click(object sender, EventArgs e)

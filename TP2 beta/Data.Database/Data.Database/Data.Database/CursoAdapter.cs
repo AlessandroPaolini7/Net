@@ -176,19 +176,29 @@ namespace Data.Database
 
         public void Save(Curso curso)
         {
-            if (curso.State == BusinessEntity.States.Deleted)
+
+            try
             {
-                this.Delete(curso.IDCurso);
+                if (curso.State == BusinessEntity.States.Deleted)
+                {
+                    this.Delete(curso.IDCurso);
+                }
+                else if (curso.State == BusinessEntity.States.New)
+                {
+                    this.Insert(curso);
+                }
+                else if (curso.State == BusinessEntity.States.Modified)
+                {
+                    this.Update(curso);
+                }
+                curso.State = BusinessEntity.States.Unmodified;
             }
-            else if (curso.State == BusinessEntity.States.New)
+            catch (Exception)
             {
-                this.Insert(curso);
+
+                throw;
             }
-            else if (curso.State == BusinessEntity.States.Modified)
-            {
-                this.Update(curso);
-            }
-            curso.State = BusinessEntity.States.Unmodified;
+            
         }
     }
 }

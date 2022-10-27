@@ -172,19 +172,27 @@ namespace Data.Database
 
         public void Save(DocenteCurso docenteCurso)
         {
-            if (docenteCurso.State == BusinessEntity.States.Deleted)
+            try
             {
-                this.Delete(docenteCurso.IDDictado);
+                if (docenteCurso.State == BusinessEntity.States.Deleted)
+                {
+                    this.Delete(docenteCurso.IDDictado);
+                }
+                else if (docenteCurso.State == BusinessEntity.States.New)
+                {
+                    this.Insert(docenteCurso);
+                }
+                else if (docenteCurso.State == BusinessEntity.States.Modified)
+                {
+                    this.Update(docenteCurso);
+                }
+                docenteCurso.State = BusinessEntity.States.Unmodified;
             }
-            else if (docenteCurso.State == BusinessEntity.States.New)
+            catch (Exception)
             {
-                this.Insert(docenteCurso);
+
+                throw;
             }
-            else if (docenteCurso.State == BusinessEntity.States.Modified)
-            {
-                this.Update(docenteCurso);
-            }
-            docenteCurso.State = BusinessEntity.States.Unmodified;
         }
     }
 }

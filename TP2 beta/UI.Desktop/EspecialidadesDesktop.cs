@@ -75,10 +75,20 @@ namespace UI.Desktop
         }
         public override void GuardarCambios()
         {
-            this.MapearADatos();
+            try
+            {
+                this.MapearADatos();
 
-            EspecialidadLogic el = new EspecialidadLogic();
-            el.Save(EspecialidadActual);
+                EspecialidadLogic el = new EspecialidadLogic();
+                el.Save(EspecialidadActual);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            
         }
         public override bool Validar() {
             if (this.txtDescripcion == null) return false;

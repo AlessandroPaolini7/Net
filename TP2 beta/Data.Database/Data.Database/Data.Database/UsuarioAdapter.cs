@@ -169,19 +169,27 @@ namespace Data.Database
 
         public void Save(Usuario usuario)
         {
-            if(usuario.State == BusinessEntity.States.Deleted)
+            try
             {
-                this.Delete(usuario.ID);
-            }     
-            else if(usuario.State == BusinessEntity.States.New)
-            {
-                this.Insert(usuario);
+                if (usuario.State == BusinessEntity.States.Deleted)
+                {
+                    this.Delete(usuario.ID);
+                }
+                else if (usuario.State == BusinessEntity.States.New)
+                {
+                    this.Insert(usuario);
+                }
+                else if (usuario.State == BusinessEntity.States.Modified)
+                {
+                    this.Update(usuario);
+                }
+                usuario.State = BusinessEntity.States.Unmodified;
             }
-            else if(usuario.State == BusinessEntity.States.Modified)
+            catch (Exception)
             {
-                this.Update(usuario);
+
+                throw;
             }
-            usuario.State = BusinessEntity.States.Unmodified;
         }
 
         public Usuario BuscarPorNombre(string nombre)

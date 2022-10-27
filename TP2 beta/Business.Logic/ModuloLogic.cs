@@ -19,22 +19,58 @@ namespace Business.Logic
 
         public List<Modulo> GetAll()
         {
-            return ModuloData.GetAll();
+            try
+            {
+                return ModuloData.GetAll();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
 
         public Modulo GetOne(int ID)
         {
-            return ModuloData.GetOne(ID);
+            try
+            {
+                return ModuloData.GetOne(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Delete(int ID)
         {
-            ModuloData.Delete(ID);
+            try
+            {
+
+                ModuloData.Delete(ID);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         public void Save(Modulo modulo)
         {
-            ModuloData.Save(modulo);
+            try
+            {
+                ModuloData.Save(modulo);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
     }

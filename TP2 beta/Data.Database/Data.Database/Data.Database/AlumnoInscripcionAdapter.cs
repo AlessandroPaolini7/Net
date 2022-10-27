@@ -174,19 +174,28 @@ namespace Data.Database
 
         public void Save(AlumnoInscripcion alumnoInscripcion)
         {
-            if (alumnoInscripcion.State == BusinessEntity.States.Deleted)
+            try
             {
-                this.Delete(alumnoInscripcion.IDInscripcion);
+                if (alumnoInscripcion.State == BusinessEntity.States.Deleted)
+                {
+                    this.Delete(alumnoInscripcion.IDInscripcion);
+                }
+                else if (alumnoInscripcion.State == BusinessEntity.States.New)
+                {
+                    this.Insert(alumnoInscripcion);
+                }
+                else if (alumnoInscripcion.State == BusinessEntity.States.Modified)
+                {
+                    this.Update(alumnoInscripcion);
+                }
+                alumnoInscripcion.State = BusinessEntity.States.Unmodified;
             }
-            else if (alumnoInscripcion.State == BusinessEntity.States.New)
+            catch (Exception)
             {
-                this.Insert(alumnoInscripcion);
+
+                throw;
             }
-            else if (alumnoInscripcion.State == BusinessEntity.States.Modified)
-            {
-                this.Update(alumnoInscripcion);
-            }
-            alumnoInscripcion.State = BusinessEntity.States.Unmodified;
+            
         }
 
     }

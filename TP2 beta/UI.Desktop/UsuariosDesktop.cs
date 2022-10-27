@@ -94,10 +94,20 @@ namespace UI.Desktop
         }
         public override void GuardarCambios()
         {
-            this.MapearADatos();
+            try
+            {
+                this.MapearADatos();
 
-            UsuarioLogic ul = new UsuarioLogic();
-            ul.Save(UsuarioActual);
+                UsuarioLogic ul = new UsuarioLogic();
+                ul.Save(UsuarioActual);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            
 
         }
         public override bool Validar()

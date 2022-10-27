@@ -178,19 +178,28 @@ namespace Data.Database
 
         public void Save(ModuloUsuario moduloUsuario)
         {
-            if (moduloUsuario.State == BusinessEntity.States.Deleted)
+            try
             {
-                this.Delete(moduloUsuario.IDModuloUsuario);
+                if (moduloUsuario.State == BusinessEntity.States.Deleted)
+                {
+                    this.Delete(moduloUsuario.IDModuloUsuario);
+                }
+                else if (moduloUsuario.State == BusinessEntity.States.New)
+                {
+                    this.Insert(moduloUsuario);
+                }
+                else if (moduloUsuario.State == BusinessEntity.States.Modified)
+                {
+                    this.Update(moduloUsuario);
+                }
+                moduloUsuario.State = BusinessEntity.States.Unmodified;
             }
-            else if (moduloUsuario.State == BusinessEntity.States.New)
+            catch (Exception)
             {
-                this.Insert(moduloUsuario);
+
+                throw;
             }
-            else if (moduloUsuario.State == BusinessEntity.States.Modified)
-            {
-                this.Update(moduloUsuario);
-            }
-            moduloUsuario.State = BusinessEntity.States.Unmodified;
+            
         }
     }
 }

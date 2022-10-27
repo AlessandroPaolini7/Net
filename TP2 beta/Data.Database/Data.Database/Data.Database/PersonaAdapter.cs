@@ -189,19 +189,27 @@ namespace Data.Database
 
         public void Save(Personas persona)
         {
-            if (persona.State == BusinessEntity.States.Deleted)
+            try
             {
-                this.Delete(persona.IDPersona);
+                if (persona.State == BusinessEntity.States.Deleted)
+                {
+                    this.Delete(persona.IDPersona);
+                }
+                else if (persona.State == BusinessEntity.States.New)
+                {
+                    this.Insert(persona);
+                }
+                else if (persona.State == BusinessEntity.States.Modified)
+                {
+                    this.Update(persona);
+                }
+                persona.State = BusinessEntity.States.Unmodified;
             }
-            else if (persona.State == BusinessEntity.States.New)
+            catch (Exception)
             {
-                this.Insert(persona);
+
+                throw;
             }
-            else if (persona.State == BusinessEntity.States.Modified)
-            {
-                this.Update(persona);
-            }
-            persona.State = BusinessEntity.States.Unmodified;
         }
     }
 }

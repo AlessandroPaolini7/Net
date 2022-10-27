@@ -84,10 +84,19 @@ namespace UI.Desktop
 
         public override void GuardarCambios()
         {
-            this.MapearADatos();
+            try
+            {
+                this.MapearADatos();
 
-            PlanLogic pl = new PlanLogic();
-            pl.Save(PlanActual);
+                PlanLogic pl = new PlanLogic();
+                pl.Save(PlanActual);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
         public override bool Validar()
         {

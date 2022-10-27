@@ -19,22 +19,58 @@ namespace Business.Logic
 
         public List<Curso> GetAll()
         {
-            return CursoData.GetAll();
+            try
+            {
+                return CursoData.GetAll();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
 
         public Curso GetOne(int ID)
         {
-            return CursoData.GetOne(ID);
+            try
+            {
+                return CursoData.GetOne(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Delete(int ID)
         {
-            CursoData.Delete(ID);
+            try
+            {
+                CursoData.Delete(ID);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
         public void Save(Curso curso)
         {
-            CursoData.Save(curso);
+            try
+            {
+                CursoData.Save(curso);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

@@ -104,7 +104,16 @@ namespace UI.Web
 
         private void DeleteEntity(int id)
         {
-            this.Comlogic.Delete(id);
+            try
+            {
+                this.Comlogic.Delete(id);
+
+            }
+            catch (Exception ex)
+            {
+
+                this.Response.Write(ex.Message);
+            }
         }
 
 

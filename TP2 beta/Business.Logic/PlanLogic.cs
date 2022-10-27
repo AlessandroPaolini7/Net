@@ -18,22 +18,58 @@ namespace Business.Logic
 
         public List<Plan> GetAll()
         {
-            return PlanData.GetAll();
+            try
+            {
+                return PlanData.GetAll();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
 
         public Plan GetOne(int ID)
         {
-            return PlanData.GetOne(ID);
+            try
+            {
+                return PlanData.GetOne(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Delete(int ID)
         {
-            PlanData.Delete(ID);
+            try
+            {
+                PlanData.Delete(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         public void Save(Plan plan)
         {
-            PlanData.Save(plan);
+            try
+            {
+
+                PlanData.Save(plan);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

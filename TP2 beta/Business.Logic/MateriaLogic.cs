@@ -19,22 +19,58 @@ namespace Business.Logic
 
         public List<Materia> GetAll()
         {
-            return MateriaData.GetAll();
+            try
+            {
+                return MateriaData.GetAll();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
 
         public Materia GetOne(int ID)
         {
-            return MateriaData.GetOne(ID);
+            try
+            {
+                return MateriaData.GetOne(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Delete(int ID)
         {
-            MateriaData.Delete(ID);
+            try
+            {
+                MateriaData.Delete(ID);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
         public void Save(Materia materia)
         {
-            MateriaData.Save(materia);
+            try
+            {
+                MateriaData.Save(materia);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
     }

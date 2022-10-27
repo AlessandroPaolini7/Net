@@ -19,22 +19,58 @@ namespace Business.Logic
 
         public List<ModuloUsuario> GetAll()
         {
-            return ModuloUsuarioData.GetAll();
+            try
+            {
+
+                return ModuloUsuarioData.GetAll();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
 
         public ModuloUsuario GetOne(int ID)
         {
-            return ModuloUsuarioData.GetOne(ID);
+            try
+            {
+                return ModuloUsuarioData.GetOne(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Delete(int ID)
         {
-            ModuloUsuarioData.Delete(ID);
+            try
+            {
+                ModuloUsuarioData.Delete(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         public void Save(ModuloUsuario moduloUsuario)
         {
-            ModuloUsuarioData.Save(moduloUsuario);
+            try
+            {
+                ModuloUsuarioData.Save(moduloUsuario);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

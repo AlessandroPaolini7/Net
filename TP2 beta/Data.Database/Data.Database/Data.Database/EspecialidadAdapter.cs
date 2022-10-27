@@ -155,19 +155,27 @@ namespace Data.Database
 
         public void Save(Especialidad esp)
         {
-            if(esp.State == BusinessEntity.States.Deleted)
+            try
             {
-                this.Delete(esp.IDEspecialidad);
-            }     
-            else if(esp.State == BusinessEntity.States.New)
-            {
-                this.Insert(esp);
+                if (esp.State == BusinessEntity.States.Deleted)
+                {
+                    this.Delete(esp.IDEspecialidad);
+                }
+                else if (esp.State == BusinessEntity.States.New)
+                {
+                    this.Insert(esp);
+                }
+                else if (esp.State == BusinessEntity.States.Modified)
+                {
+                    this.Update(esp);
+                }
+                esp.State = BusinessEntity.States.Unmodified;
             }
-            else if(esp.State == BusinessEntity.States.Modified)
+            catch (Exception)
             {
-                this.Update(esp);
+
+                throw;
             }
-            esp.State = BusinessEntity.States.Unmodified;
         }
     }
 }

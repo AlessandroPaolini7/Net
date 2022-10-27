@@ -153,19 +153,27 @@ namespace Data.Database
 
         public void Save(Modulo modulo)
         {
-            if (modulo.State == BusinessEntity.States.Deleted)
+            try
             {
-                this.Delete(modulo.IDModulo);
+                if (modulo.State == BusinessEntity.States.Deleted)
+                {
+                    this.Delete(modulo.IDModulo);
+                }
+                else if (modulo.State == BusinessEntity.States.New)
+                {
+                    this.Insert(modulo);
+                }
+                else if (modulo.State == BusinessEntity.States.Modified)
+                {
+                    this.Update(modulo);
+                }
+                modulo.State = BusinessEntity.States.Unmodified;
             }
-            else if (modulo.State == BusinessEntity.States.New)
+            catch (Exception)
             {
-                this.Insert(modulo);
+
+                throw;
             }
-            else if (modulo.State == BusinessEntity.States.Modified)
-            {
-                this.Update(modulo);
-            }
-            modulo.State = BusinessEntity.States.Unmodified;
         }
     }
 }

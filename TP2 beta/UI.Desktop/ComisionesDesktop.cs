@@ -92,10 +92,19 @@ namespace UI.Desktop
 
         public override void GuardarCambios()
         {
-            this.MapearADatos();
+            try
+            {
+                this.MapearADatos();
 
-            ComisionLogic cl = new ComisionLogic();
-            cl.Save(ComisionActual);
+                ComisionLogic cl = new ComisionLogic();
+                cl.Save(ComisionActual);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         public override bool Validar()

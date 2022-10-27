@@ -159,19 +159,27 @@ namespace Data.Database
 
         public void Save(Plan plan)
         {
-            if (plan.State == BusinessEntity.States.Deleted)
+            try
             {
-                this.Delete(plan.IDPlan);
+                if (plan.State == BusinessEntity.States.Deleted)
+                {
+                    this.Delete(plan.IDPlan);
+                }
+                else if (plan.State == BusinessEntity.States.New)
+                {
+                    this.Insert(plan);
+                }
+                else if (plan.State == BusinessEntity.States.Modified)
+                {
+                    this.Update(plan);
+                }
+                plan.State = BusinessEntity.States.Unmodified;
             }
-            else if (plan.State == BusinessEntity.States.New)
+            catch (Exception)
             {
-                this.Insert(plan);
+
+                throw;
             }
-            else if (plan.State == BusinessEntity.States.Modified)
-            {
-                this.Update(plan);
-            }
-            plan.State = BusinessEntity.States.Unmodified;
         }
     }
 }

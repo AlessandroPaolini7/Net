@@ -160,19 +160,28 @@ namespace Data.Database
 
         public void Save(Comision comision)
         {
-            if (comision.State == BusinessEntity.States.Deleted)
+            try
             {
-                this.Delete(comision.IDComision);
+                if (comision.State == BusinessEntity.States.Deleted)
+                {
+                    this.Delete(comision.IDComision);
+                }
+                else if (comision.State == BusinessEntity.States.New)
+                {
+                    this.Insert(comision);
+                }
+                else if (comision.State == BusinessEntity.States.Modified)
+                {
+                    this.Update(comision);
+                }
+                comision.State = BusinessEntity.States.Unmodified;
             }
-            else if (comision.State == BusinessEntity.States.New)
+            catch (Exception)
             {
-                this.Insert(comision);
+
+                throw;
             }
-            else if (comision.State == BusinessEntity.States.Modified)
-            {
-                this.Update(comision);
-            }
-            comision.State = BusinessEntity.States.Unmodified;
+            
         }
     }
 }

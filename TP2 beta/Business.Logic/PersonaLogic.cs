@@ -19,22 +19,58 @@ namespace Business.Logic
 
         public List<Personas> GetAll()
         {
-            return PersonaData.GetAll();
+            try
+            {
+                return PersonaData.GetAll();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
 
         public Personas GetOne(int ID)
         {
-            return PersonaData.GetOne(ID);
+            try
+            {
+                return PersonaData.GetOne(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Delete(int ID)
         {
-            PersonaData.Delete(ID);
+            try
+            {
+                PersonaData.Delete(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         public void Save(Personas persona)
         {
-            PersonaData.Save(persona);
+            try
+            {
+                PersonaData.Save(persona);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

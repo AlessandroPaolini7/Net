@@ -141,7 +141,17 @@ namespace UI.Web
 
         private void DeleteEntity(int id)
         {
-            this.MateriaLogic.Delete(id);
+            try
+            {
+                this.MateriaLogic.Delete(id);
+
+            }
+            catch (Exception ex)
+            {
+
+                this.Response.Write(ex.Message);
+            }
+            
         }
 
         protected void nuevoLinkButton_Click(object sender, EventArgs e)
