@@ -13,5 +13,6 @@ namespace Business.Entities
         public int HorasSemanales { get; set; }
         public int HorasTotales { get; set; }
         public Plan Plan { get; set; }
+        public string PlanDesc { get; set; }
     }
 }

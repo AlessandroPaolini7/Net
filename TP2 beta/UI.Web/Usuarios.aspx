@@ -14,6 +14,8 @@
                 <asp:BoundField HeaderText="Email" DataField="Email" />
                 <asp:BoundField HeaderText="Usuario" DataField="NombreUsuario" />
                 <asp:BoundField HeaderText="Habilitado" DataField="Habilitado" />
+                <asp:BoundField HeaderText="Persona" DataField="Persona.Nombre" />
+
                 <asp:CommandField SelectText="Seleccionar" ShowSelectButton="true" />
             </Columns>
         </asp:GridView>
@@ -54,6 +56,11 @@
             <asp:TextBox ID="repetirClaveTextBox" runat="server" OnTextChanged="repetirClaveTextBox_TextChanged" TextMode="Password"></asp:TextBox>
             &nbsp;<asp:RequiredFieldValidator ID="repetirClaveValidator" runat="server" ControlToValidate="repetirClaveTextBox" Display="Dynamic" ErrorMessage="Debe repetir la clave" ForeColor="#CC0066" SetFocusOnError="True">*</asp:RequiredFieldValidator>
             <asp:CompareValidator ID="repetirClaveComValidator" runat="server" ControlToCompare="claveTextBox" ControlToValidate="repetirClaveTextBox" Display="Dynamic" ErrorMessage="Las claves no coinciden" ForeColor="#CC0066" SetFocusOnError="True">*</asp:CompareValidator>
+            <br />
+            <asp:Label CssClass="label" ID="Label3" runat="server" Text="Persona: "></asp:Label>
+            <asp:DropDownList ID="PersonaDDLUsuario" runat="server" DataTextField="Nombre" DataValueField="IDPersona">
+            </asp:DropDownList>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="PersonaDDLUsuario" Display="Dynamic" ErrorMessage="La persona no puede estar vacía" ForeColor="#CC0066">*</asp:RequiredFieldValidator>
             <br />
             <asp:Panel CssClass="formsActionsPanel" ID="formsActionsPanel" runat="server">
                 <asp:button ID="aceptarButton" runat="server" Text="Aceptar" OnClick="aceptarButton_Click"/>

@@ -132,8 +132,8 @@ namespace Data.Database
             try
             {
                 this.OpenConnection();
-                SqlCommand cmdSave = new SqlCommand("INSERT INTO Modulos(desc_materia) " +
-                    "values(@desc_materia) " +
+                SqlCommand cmdSave = new SqlCommand("INSERT INTO Modulos(desc_modulo) " +
+                    "values(@descripcion) " +
                     "select @@identity", sqlConn);
                 cmdSave.Parameters.Add("@descripcion", SqlDbType.VarChar, 50).Value = modulo.Descripcion;
 

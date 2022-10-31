@@ -7,11 +7,13 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace UI.Web {
-    
-    
-    public partial class Usuarios {
-        
+namespace UI.Web
+{
+
+
+    public partial class Usuarios
+    {
+
         /// <summary>
         /// Control gridPanel.
         /// </summary>
@@ -20,7 +22,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel gridPanel;
-        
+
         /// <summary>
         /// Control gridView.
         /// </summary>
@@ -29,7 +31,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gridView;
-        
+
         /// <summary>
         /// Control gridActionsPanel.
         /// </summary>
@@ -38,7 +40,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel gridActionsPanel;
-        
+
         /// <summary>
         /// Control editarButton.
         /// </summary>
@@ -47,7 +49,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button editarButton;
-        
+
         /// <summary>
         /// Control eliminarButton.
         /// </summary>
@@ -56,7 +58,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button eliminarButton;
-        
+
         /// <summary>
         /// Control nuevoButton.
         /// </summary>
@@ -65,7 +67,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button nuevoButton;
-        
+
         /// <summary>
         /// Control formPanel.
         /// </summary>
@@ -74,7 +76,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel formPanel;
-        
+
         /// <summary>
         /// Control nombreLabel.
         /// </summary>
@@ -83,7 +85,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label nombreLabel;
-        
+
         /// <summary>
         /// Control nombreTextBox.
         /// </summary>
@@ -92,7 +94,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox nombreTextBox;
-        
+
         /// <summary>
         /// Control nombreValidator.
         /// </summary>
@@ -101,7 +103,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator nombreValidator;
-        
+
         /// <summary>
         /// Control apellidoLabel.
         /// </summary>
@@ -110,7 +112,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label apellidoLabel;
-        
+
         /// <summary>
         /// Control apellidoTextBox.
         /// </summary>
@@ -119,7 +121,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox apellidoTextBox;
-        
+
         /// <summary>
         /// Control apellidoValidator.
         /// </summary>
@@ -128,7 +130,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator apellidoValidator;
-        
+
         /// <summary>
         /// Control emailLabel.
         /// </summary>
@@ -137,7 +139,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label emailLabel;
-        
+
         /// <summary>
         /// Control emailTextBox.
         /// </summary>
@@ -146,7 +148,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox emailTextBox;
-        
+
         /// <summary>
         /// Control emailValidator.
         /// </summary>
@@ -155,7 +157,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator emailValidator;
-        
+
         /// <summary>
         /// Control emailExpValidator.
         /// </summary>
@@ -164,7 +166,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator emailExpValidator;
-        
+
         /// <summary>
         /// Control habilitadoLabel.
         /// </summary>
@@ -173,7 +175,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label habilitadoLabel;
-        
+
         /// <summary>
         /// Control habilitadoCheckBox.
         /// </summary>
@@ -182,7 +184,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox habilitadoCheckBox;
-        
+
         /// <summary>
         /// Control nombreUsuarioLabel.
         /// </summary>
@@ -191,7 +193,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label nombreUsuarioLabel;
-        
+
         /// <summary>
         /// Control nombreUsuarioTextBox.
         /// </summary>
@@ -200,7 +202,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox nombreUsuarioTextBox;
-        
+
         /// <summary>
         /// Control nombreUsuarioValidator.
         /// </summary>
@@ -209,7 +211,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator nombreUsuarioValidator;
-        
+
         /// <summary>
         /// Control claveLabel.
         /// </summary>
@@ -218,7 +220,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label claveLabel;
-        
+
         /// <summary>
         /// Control claveTextBox.
         /// </summary>
@@ -227,7 +229,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox claveTextBox;
-        
+
         /// <summary>
         /// Control claveValidator.
         /// </summary>
@@ -236,7 +238,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator claveValidator;
-        
+
         /// <summary>
         /// Control repetirClaveLabel.
         /// </summary>
@@ -245,7 +247,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label repetirClaveLabel;
-        
+
         /// <summary>
         /// Control repetirClaveTextBox.
         /// </summary>
@@ -254,7 +256,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox repetirClaveTextBox;
-        
+
         /// <summary>
         /// Control repetirClaveValidator.
         /// </summary>
@@ -263,7 +265,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator repetirClaveValidator;
-        
+
         /// <summary>
         /// Control repetirClaveComValidator.
         /// </summary>
@@ -272,7 +274,34 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CompareValidator repetirClaveComValidator;
-        
+
+        /// <summary>
+        /// Control Label3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label3;
+
+        /// <summary>
+        /// Control PersonaDDLUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList PersonaDDLUsuario;
+
+        /// <summary>
+        /// Control RequiredFieldValidator3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+
         /// <summary>
         /// Control formsActionsPanel.
         /// </summary>
@@ -281,7 +310,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel formsActionsPanel;
-        
+
         /// <summary>
         /// Control aceptarButton.
         /// </summary>
@@ -290,7 +319,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button aceptarButton;
-        
+
         /// <summary>
         /// Control cancelarButton.
         /// </summary>
@@ -299,7 +328,7 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cancelarButton;
-        
+
         /// <summary>
         /// Control validationSummary.
         /// </summary>

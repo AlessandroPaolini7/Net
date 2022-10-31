@@ -33,7 +33,13 @@ namespace UI.Desktop
         public void Listar()
         {
             Business.Logic.UsuarioLogic ul = new UsuarioLogic();
-            this.dgvUsuarios.DataSource = ul.GetAll();
+            List<Business.Entities.Usuario> usuarios = ul.GetAll();
+            foreach (Usuario user in usuarios)
+            {
+                user.PersonaDesc = user.Persona.Nombre;
+
+            }
+            this.dgvUsuarios.DataSource = usuarios;
 
 
         }

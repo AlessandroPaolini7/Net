@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Academia Login</title>
-        <link href="Login_Style.css" rel="stylesheet" />
+        <link href="~/Login_Style.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">

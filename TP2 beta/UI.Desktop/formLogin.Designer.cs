@@ -124,7 +124,7 @@ namespace UI.Desktop
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "formLogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingreso";
             this.Load += new System.EventHandler(this.formLogin_Load);
             this.ResumeLayout(false);

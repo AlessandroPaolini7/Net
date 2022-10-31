@@ -31,7 +31,9 @@ namespace UI.Desktop
             }
             else
             {
-                this.DialogResult = DialogResult.OK;
+                formMain appMain = new formMain(user);
+                appMain.ShowDialog();
+                this.Close();
             }
         }
 

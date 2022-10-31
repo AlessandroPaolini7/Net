@@ -126,7 +126,7 @@ namespace Data.Database
             try
             {
                 this.OpenConnection();
-                SqlCommand cmdSave = new SqlCommand("UPDATE Personas SET apellido=@apellido, nombre=@nombre, direccion=@direccion, email=@email, telefono=@telefono, fecha_nac=@fecha_nac, legajo=@legajo, tipo_persona=@tipo_persona, id_plan=@id_plan" +
+                SqlCommand cmdSave = new SqlCommand("UPDATE Personas SET apellido=@apellido, nombre=@nombre, direccion=@direccion, email=@email, telefono=@telefono, fecha_nac=@fecha_nac, legajo=@legajo, tipo_persona=@tipo_persona, id_plan=@id_plan " +
                     "WHERE id_persona=@id", sqlConn);
                 cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = persona.IDPersona;
                 cmdSave.Parameters.Add("@apellido", SqlDbType.VarChar, 50).Value = persona.Apellido;

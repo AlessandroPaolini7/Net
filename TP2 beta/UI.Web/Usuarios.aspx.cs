@@ -79,59 +79,44 @@ namespace UI.Web
             this.emailTextBox.Text = this.Entity.Email;
             this.habilitadoCheckBox.Checked = this.Entity.Habilitado;
             this.nombreUsuarioTextBox.Text = this.Entity.NombreUsuario;
+            PersonaLogic personaLogic = new PersonaLogic();
+            List<Business.Entities.Personas> personas = personaLogic.GetAll();
+            foreach (Business.Entities.Personas persona in personas)
+            {
+                ListItem i = new ListItem(persona.Nombre, persona.IDPersona.ToString());
+                if (!PersonaDDLUsuario.Items.Contains(i))
+                {
+                    PersonaDDLUsuario.Items.Add(i);
+                }
+            }
+            this.PersonaDDLUsuario.SelectedValue = Entity.Persona.IDPersona.ToString();
         }
 
         protected void editarLinkButton_Click(object sender, EventArgs e)
         {
-            if (this.IsEntitySelected)
-            {
-                this.formPanel.Visible = true;
-                this.FormMode = FormModes.Modificacion;
-                this.EnableForm(true);
-                this.LoadForm(this.SelectedID);
-            }
+            
         }
 
-        private void LoadEntity(Usuario usuario)
+        private void LoadEntity()
         {
-            usuario.Nombre = this.nombreTextBox.Text;
-            usuario.Apellido = this.apellidoTextBox.Text;
-            usuario.Email = this.emailTextBox.Text;
-            usuario.NombreUsuario = this.nombreUsuarioTextBox.Text;
-            usuario.Clave = this.claveTextBox.Text;
-            usuario.Habilitado = this.habilitadoCheckBox.Checked;
+            Entity.Nombre = this.nombreTextBox.Text;
+            Entity.Apellido = this.apellidoTextBox.Text;
+            Entity.Email = this.emailTextBox.Text;
+            Entity.NombreUsuario = this.nombreUsuarioTextBox.Text;
+            Entity.Clave = this.claveTextBox.Text;
+            Entity.Habilitado = this.habilitadoCheckBox.Checked;
+            PersonaLogic personaLogic = new PersonaLogic();
+            this.Entity.Persona = personaLogic.GetOne(Convert.ToInt32(this.PersonaDDLUsuario.SelectedValue));
         }
 
-        private void SaveEntity(Usuario usuario)
+        private void SaveEntity()
         {
-            this.Logic.Save(usuario);
+            this.Logic.Save(Entity);
         }
 
         protected void aceptarLinkButton_Click(object sender, EventArgs e)
         {
-            switch (this.FormMode)
-            {
-                case FormModes.Baja:
-                    this.DeleteEntity(this.SelectedID);
-                    this.LoadGrid();
-                    break;
-                case FormModes.Modificacion:
-                    this.Entity = new Usuario();
-                    this.Entity.ID = this.SelectedID;
-                    this.Entity.State = BusinessEntity.States.Modified;
-                    this.LoadEntity(this.Entity);
-                    this.SaveEntity(this.Entity);
-                    this.LoadGrid();
-                    break;
-                case FormModes.Alta:
-                    this.Entity = new Usuario();
-                    this.LoadEntity(this.Entity);
-                    this.SaveEntity(this.Entity);
-                    this.LoadGrid();
-                    break;
-            }
-
-            this.formPanel.Visible = false;
+            
         }
 
         protected void repetirClaveTextBox_TextChanged(object sender, EventArgs e)
@@ -149,18 +134,13 @@ namespace UI.Web
             this.claveTextBox.Visible = enable;
             this.claveLabel.Visible = enable;
             this.repetirClaveTextBox.Visible = enable;
-            this.repetirClaveLabel.Visible = enable; 
+            this.repetirClaveLabel.Visible = enable;
+            this.PersonaDDLUsuario.Enabled = enable;
         }
 
         protected void eliminarLinkButton_Click(object sender, EventArgs e)
         {
-            if (this.IsEntitySelected)
-            {
-                this.formPanel.Visible = true;
-                this.FormMode = FormModes.Baja;
-                this.EnableForm(false);
-                this.LoadForm(this.SelectedID);
-            }
+            
         }
 
         private void DeleteEntity(int id)
@@ -179,10 +159,7 @@ namespace UI.Web
 
         protected void nuevoLinkButton_Click(object sender, EventArgs e)
         {
-            this.formPanel.Visible = true;
-            this.FormMode = FormModes.Alta;
-            this.ClearForm();
-            this.EnableForm(true);
+            
         }
 
         private void ClearForm()
@@ -192,6 +169,16 @@ namespace UI.Web
             this.emailTextBox.Text = string.Empty;
             this.habilitadoCheckBox.Checked = false;
             this.nombreUsuarioTextBox.Text = string.Empty;
+            PersonaLogic personaLogic = new PersonaLogic();
+            List<Business.Entities.Personas> personas = personaLogic.GetAll();
+            foreach (Business.Entities.Personas persona in personas)
+            {
+                ListItem i = new ListItem(persona.Nombre, persona.IDPersona.ToString());
+                if (!PersonaDDLUsuario.Items.Contains(i))
+                {
+                    PersonaDDLUsuario.Items.Add(i);
+                }
+            }
         }
 
         protected void editarButton_Click(object sender, EventArgs e)
@@ -242,14 +229,15 @@ namespace UI.Web
                     this.Entity = new Usuario();
                     this.Entity.ID = this.SelectedID;
                     this.Entity.State = BusinessEntity.States.Modified;
-                    this.LoadEntity(this.Entity);
-                    this.SaveEntity(this.Entity);
+                    this.LoadEntity();
+                    this.SaveEntity();
                     this.LoadGrid();
                     break;
                 case FormModes.Alta:
                     this.Entity = new Usuario();
-                    this.LoadEntity(this.Entity);
-                    this.SaveEntity(this.Entity);
+                    this.Entity.State = BusinessEntity.States.New;
+                    this.LoadEntity();
+                    this.SaveEntity();
                     this.LoadGrid();
                     break;
             }
@@ -262,16 +250,7 @@ namespace UI.Web
         }
         protected void cancelarButton_Click(object sender, EventArgs e)
         {
-            //nombreValidator.Visible = false;
-            //apellidoValidator.Visible = false;
-            //emailValidator.Visible = false;
-            //emailExpValidator.Visible = false;
-            //nombreUsuarioValidator.Visible = false;
-            //claveValidator.Visible = false;
-            //repetirClaveValidator.Visible = false;
-            //repetirClaveComValidator.Visible = false;
-            //validationSummary.Visible = false;
-            //// this.EnableForm(false);
+           
             formPanel.Visible = false;
             LoadGrid();
 

@@ -52,7 +52,7 @@ namespace UI.Web
             get { return (this.SelectedID != 0); }
         }
 
-        private Comision Entity { get; set; }
+        private Business.Entities.Comision Entity { get; set; }
 
         private void LoadGrid(){
             this.gridView.DataSource = this.Comlogic.GetAll();
@@ -70,35 +70,48 @@ namespace UI.Web
         protected void gridView_SelectedIndexChanged(object sender, EventArgs e)
         {
             var row = gridView.SelectedRow;
-            this.SelectedID = Convert.ToInt32(row.Cells[0].Text);
+            this.SelectedID = (int)this.gridView.SelectedValue;
         }
 
         private void LoadForm(int id){
             this.Entity = this.Comlogic.GetOne(id);
             this.descripcionTextBox.Text = this.Entity.Descripcion;
             this.anioespecialidadTextBox.Text = Convert.ToString(this.Entity.AnioEspecialidad);
-            this.idplanTextBox.Text = Convert.ToString(this.Entity.IDPlan);
+            this.PlanDDLComision.Items.Clear();
+            PlanLogic planLogic = new PlanLogic();
+            List<Plan> planes = planLogic.GetAll();
+            foreach (Plan plan in planes)
+            {
+                ListItem i = new ListItem(plan.Descripcion, plan.IDPlan.ToString());
+                if (!PlanDDLComision.Items.Contains(i))
+                {
+                    PlanDDLComision.Items.Add(i);
+                }
+            }
+            this.PlanDDLComision.SelectedValue = Entity.Plan.IDPlan.ToString();
         }
 
 
 
-        private void LoadEntity(Business.Entities.Comision comision)
+        private void LoadEntity()
         {
-            comision.Descripcion = this.descripcionTextBox.Text;
-            comision.AnioEspecialidad = Convert.ToInt32(this.anioespecialidadTextBox.Text);
-            comision.IDPlan = Convert.ToInt32(this.idplanTextBox.Text);
+            Entity.Descripcion = this.descripcionTextBox.Text;
+            Entity.AnioEspecialidad = Convert.ToInt32(this.anioespecialidadTextBox.Text);
+            PlanLogic planLogic = new PlanLogic();
+            this.Entity.Plan = planLogic.GetOne(Convert.ToInt32(this.PlanDDLComision.SelectedValue));
         }
 
-        private void SaveEntity(Business.Entities.Comision comision)
+        private void SaveEntity()
         {
-            this.Comlogic.Save(comision);
+            this.Comlogic.Save(this.Entity);
         }
 
 
         private void EnableForm(bool enable){
             this.descripcionTextBox.Enabled = enable;
             this.anioespecialidadTextBox.Enabled = enable;
-            this.idplanTextBox.Enabled = enable;
+            this.PlanDDLComision.Enabled = enable;
+
         }
 
 
@@ -121,7 +134,17 @@ namespace UI.Web
         {
             this.descripcionTextBox.Text = string.Empty;
             this.anioespecialidadTextBox.Text = string.Empty;
-            this.idplanTextBox.Text = string.Empty;
+            this.PlanDDLComision.Items.Clear();
+            PlanLogic planLogic = new PlanLogic();
+            List<Plan> planes = planLogic.GetAll();
+            foreach (Plan plan in planes)
+            {
+                ListItem i = new ListItem(plan.Descripcion, plan.IDPlan.ToString());
+                if (!PlanDDLComision.Items.Contains(i))
+                {
+                    PlanDDLComision.Items.Add(i);
+                }
+            }
         }
 
         protected void editarButton_Click(object sender, EventArgs e)
@@ -160,18 +183,19 @@ namespace UI.Web
                 case FormModes.Alta:
                     {
                         this.Entity = new Comision();
-                        this.LoadEntity(this.Entity);
-                        this.SaveEntity(this.Entity);
+                        this.Entity.State = BusinessEntity.States.New;
+                        this.LoadEntity();
+                        this.SaveEntity();
                         this.LoadGrid();
                         break;
                     }
                 case FormModes.Modificacion:
                     {
                         this.Entity = new Comision();
-                        this.Entity.ID = this.SelectedID;
+                        this.Entity.IDComision = this.SelectedID;
                         this.Entity.State = BusinessEntity.States.Modified;
-                        this.LoadEntity(this.Entity);
-                        this.SaveEntity(this.Entity);
+                        this.LoadEntity();
+                        this.SaveEntity();
                         this.LoadGrid();
                         break;
                     }

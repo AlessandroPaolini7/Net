@@ -10,11 +10,13 @@ namespace Business.Entities
     {
         public int IDModuloUsuario { get; set; }
         public Usuario Usuario { get; set; }
+        public string UsuarioDesc { get; set; }
         public Modulo Modulo { get; set; }
+        public string ModuloDesc { get; set; }
         public bool PermiteAlta { get; set; }
         public bool PermiteBaja { get; set; }
-        public bool PermiteConsulta { get; set; }
         public bool PermiteModificacion { get; set; }
+        public bool PermiteConsulta { get; set; }
 
     }
 }

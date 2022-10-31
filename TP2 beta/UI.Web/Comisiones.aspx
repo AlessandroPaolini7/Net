@@ -7,12 +7,11 @@
         <asp:GridView ID="gridView" runat="server" AutoGenerateColumns="false" GridLines="None" CssClass="myGridClass" AlternatingRowStyle-CssClass="alt" 
             SelectedRowStyle-BackColor="Black"
              SelectedRowStyle-ForeColor="White"
-            DataKeyNames="ID" OnSelectedIndexChanged="gridView_SelectedIndexChanged">
+            DataKeyNames="IDComision" OnSelectedIndexChanged="gridView_SelectedIndexChanged">
             <Columns>
-                <asp:BoundField HeaderText="IDComision" DataField="IDComision" />
                 <asp:BoundField HeaderText="AnioEspecialidad" DataField="AnioEspecialidad" />
                 <asp:BoundField HeaderText="Descripcion" DataField="Descripcion" />
-                <asp:BoundField HeaderText="IDPlan" DataField="IDPlan" />
+                <asp:BoundField HeaderText="Plan" DataField="Plan.Descripcion" />
                 <asp:CommandField SelectText="Seleccionar" ShowSelectButton="true" />
             </Columns>
         </asp:GridView>
@@ -33,9 +32,10 @@
             <asp:TextBox ID="descripcionTextBox" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="validatorDescripcion" runat="server" ControlToValidate="descripcionTextBox" Display="Dynamic" ErrorMessage="La descripcion no puede estar vacía" ForeColor="#CC0066">*</asp:RequiredFieldValidator>
             <br />
-            <asp:Label CssClass="label" ID="Label1" runat="server" Text="ID plan: "></asp:Label>
-            <asp:TextBox ID="idplanTextBox" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="validatorIdPlan" runat="server" ControlToValidate="idplanTextBox" Display="Dynamic" ErrorMessage="El id del plan no puede estar vacío" ForeColor="#CC0066">*</asp:RequiredFieldValidator>
+            <asp:Label CssClass="label" ID="Label3" runat="server" Text="Plan: "></asp:Label>
+            <asp:DropDownList ID="PlanDDLComision" runat="server" DataTextField="Descripcion" DataValueField="IDPlan">
+            </asp:DropDownList>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="PlanDDLComision" Display="Dynamic" ErrorMessage="El plan no puede estar vacío" ForeColor="#CC0066">*</asp:RequiredFieldValidator>
             <br />
             <asp:Panel CssClass="formsActionsPanel" ID="formsActionsPanel" runat="server">
                 <asp:button ID="aceptarButton" runat="server" Text="Aceptar" OnClick="aceptarButton_Click"/>

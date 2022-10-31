@@ -7,6 +7,8 @@
 	<siteMapNode url="~/Comisiones.aspx" title="Comisiones"  description="Comisiones" />
 	<siteMapNode url="~/Materias.aspx" title="Materias"  description="Materias" />
 	<siteMapNode url="~/Cursos.aspx" title="Cursos"  description="Cursos" />
+	<siteMapNode url="~/Personas.aspx" title="Personas"  description="Personas" />
+	<siteMapNode url="~/AlumnoInscripciones.aspx" title="Inscripciones"  description="Inscripciones" />
 
 	  <siteMapNode url="" title=""  description="" />
   </siteMapNode>
