@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Personas.aspx.cs" Inherits="UI.Web.Personas" %>
+﻿<%@ Page Title="Personas" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Personas.aspx.cs" Inherits="UI.Web.Personas" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="ABM_Style.css" rel="stylesheet" />
 </asp:Content>
@@ -9,25 +9,28 @@
              SelectedRowStyle-ForeColor="White"
             DataKeyNames="IDPersona" OnSelectedIndexChanged="gridView_SelectedIndexChanged">
             <Columns>
-                <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
-                <asp:BoundField HeaderText="Apellido" DataField="Apellido" />
-                <asp:BoundField HeaderText="Direccion" DataField="Direccion" />
-                <asp:BoundField HeaderText="Email" DataField="Email" />
-                <asp:BoundField HeaderText="Telefono" DataField="Telefono" />
-                <asp:BoundField HeaderText="Fecha Nacimiento" DataField="FechaNacimiento" />
-                <asp:BoundField HeaderText="Legajo" DataField="Legajo" />
-                <asp:BoundField HeaderText="Plan" DataField="Plan.Descripcion" />
-                <asp:CommandField SelectText="Seleccionar" ShowSelectButton="true" />
+                <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
+                <asp:BoundField HeaderText="Apellido" DataField="Apellido" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center" />
+                <asp:BoundField HeaderText="Direccion" DataField="Direccion" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
+                <asp:BoundField HeaderText="Email" DataField="Email" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
+                <asp:BoundField HeaderText="Telefono" DataField="Telefono" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
+                <asp:BoundField HeaderText="Fecha Nacimiento" DataField="FechaNacimiento" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
+                <asp:BoundField HeaderText="Legajo" DataField="Legajo" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
+                <asp:BoundField HeaderText="Plan" DataField="Plan.Descripcion" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
+                <asp:CommandField SelectText="Seleccionar" ShowSelectButton="true" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center" />
             </Columns>
         </asp:GridView>
-        <asp:Panel CssClass="gridActionsPanel" ID="gridActionsPanel" runat="server">
-            <asp:Button ID="editarButton" Text="Editar" runat="server" OnClick="editarButton_Click" />
-            <asp:Button ID="eliminarButton" Text="Eliminar" runat="server" OnClick="eliminarButton_Click" />
-            <asp:Button ID="nuevoButton" Text="Nuevo" runat="server" OnClick="nuevoButton_Click" />
+        <<asp:Panel CssClass="gridActionsPanel" ID="gridActionsPanel" runat="server">
+            <div class="d-flex justify-content-center">
+            <asp:Button ID="editarButton" Text="Editar" runat="server" OnClick="editarButton_Click" CssClass="bg-primary"/>
+            <asp:Button ID="eliminarButton" Text="Eliminar" runat="server" OnClick="eliminarButton_Click" CssClass="bg-primary" />
+            <asp:Button ID="nuevoButton" Text="Nuevo" runat="server" OnClick="nuevoButton_Click" CssClass="bg-primary"/>
+            </div>
             <br />
             <br />
             <br />
         </asp:Panel>
+        <div class="d-flex justify-content-center">
         <asp:Panel CssClass="formPanel" ID="formPanel" Visible="false" runat="server">
             <asp:Label CssClass="label" ID="nombreLabel" runat="server" Text="Nombre: "></asp:Label>
             <asp:TextBox ID="nombreTextBox" runat="server"></asp:TextBox>
@@ -63,10 +66,11 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="PlanDDLPersonas" Display="Dynamic" ErrorMessage="El plan no puede estar vacío" ForeColor="#CC0066">*</asp:RequiredFieldValidator>
             <br />
             <asp:Panel CssClass="formsActionsPanel" ID="formsActionsPanel" runat="server">
-                <asp:button ID="aceptarButton" runat="server" Text="Aceptar" OnClick="aceptarButton_Click"/>
-                <asp:button ID="cancelarButton" runat="server" Text="Cancelar" OnClick="cancelarButton_Click" CausesValidation="False"/>
+                <asp:button ID="aceptarButton" runat="server" Text="Aceptar" OnClick="aceptarButton_Click" CssClass="bg-primary"/>
+                <asp:button ID="cancelarButton" runat="server" Text="Cancelar" OnClick="cancelarButton_Click" CausesValidation="False" CssClass="bg-primary"/>
                 <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="#CC0066" />
             </asp:Panel>
         </asp:Panel>
+            </div>
     </asp:Panel>
 </asp:Content>

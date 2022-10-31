@@ -69,8 +69,6 @@ C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.ReportVi
 C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
 C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.Reporte.resources
-C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\RdlCompile.cache
-C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\RdlCompile.compiled
 C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -125,3 +123,7 @@ C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\pt\Microsoft.Repor
 C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.ReporteCursos.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\RdlCompile.cache
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\RdlCompile.compiled
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.ReportePlanes.resources

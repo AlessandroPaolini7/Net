@@ -9,24 +9,27 @@
              SelectedRowStyle-ForeColor="White"
             DataKeyNames="ID" OnSelectedIndexChanged="gridView_SelectedIndexChanged">
             <Columns>
-                <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
-                <asp:BoundField HeaderText="Apellido" DataField="Apellido" />
-                <asp:BoundField HeaderText="Email" DataField="Email" />
-                <asp:BoundField HeaderText="Usuario" DataField="NombreUsuario" />
-                <asp:BoundField HeaderText="Habilitado" DataField="Habilitado" />
-                <asp:BoundField HeaderText="Persona" DataField="Persona.Nombre" />
+                <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
+                <asp:BoundField HeaderText="Apellido" DataField="Apellido" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
+                <asp:BoundField HeaderText="Email" DataField="Email" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
+                <asp:BoundField HeaderText="Usuario" DataField="NombreUsuario" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
+                <asp:BoundField HeaderText="Habilitado" DataField="Habilitado" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
+                <asp:BoundField HeaderText="Persona" DataField="Persona.Nombre" ItemStyle-CssClass="text-center" HeaderStyle-CssClass="text-center"/>
 
                 <asp:CommandField SelectText="Seleccionar" ShowSelectButton="true" />
             </Columns>
         </asp:GridView>
         <asp:Panel CssClass="gridActionsPanel" ID="gridActionsPanel" runat="server">
-            <asp:Button ID="editarButton" Text="Editar" runat="server" OnClick="editarButton_Click" />
-            <asp:Button ID="eliminarButton" Text="Eliminar" runat="server" OnClick="eliminarButton_Click" />
-            <asp:Button ID="nuevoButton" Text="Nuevo" runat="server" OnClick="nuevoButton_Click" />
+            <div class="d-flex justify-content-center">
+            <asp:Button ID="editarButton" Text="Editar" runat="server" OnClick="editarButton_Click" CssClass="bg-primary"/>
+            <asp:Button ID="eliminarButton" Text="Eliminar" runat="server" OnClick="eliminarButton_Click" CssClass="bg-primary" />
+            <asp:Button ID="nuevoButton" Text="Nuevo" runat="server" OnClick="nuevoButton_Click" CssClass="bg-primary"/>
+            </div>
             <br />
             <br />
             <br />
         </asp:Panel>
+            <div class="d-flex justify-content-center">
         <asp:Panel CssClass="formPanel" ID="formPanel" Visible="false" runat="server">
             <asp:Label CssClass="label" ID="nombreLabel" runat="server" Text="Nombre: "></asp:Label>
             <asp:TextBox  ID="nombreTextBox" runat="server"></asp:TextBox>
@@ -63,10 +66,11 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="PersonaDDLUsuario" Display="Dynamic" ErrorMessage="La persona no puede estar vacía" ForeColor="#CC0066">*</asp:RequiredFieldValidator>
             <br />
             <asp:Panel CssClass="formsActionsPanel" ID="formsActionsPanel" runat="server">
-                <asp:button ID="aceptarButton" runat="server" Text="Aceptar" OnClick="aceptarButton_Click"/>
-                <asp:button ID="cancelarButton" runat="server" Text="Cancelar" OnClick="cancelarButton_Click" CausesValidation="False"/>
+                <asp:button ID="aceptarButton" runat="server" Text="Aceptar" OnClick="aceptarButton_Click" CssClass="bg-primary"/>
+                <asp:button ID="cancelarButton" runat="server" Text="Cancelar" OnClick="cancelarButton_Click" CausesValidation="False" CssClass="bg-primary"/>
                 <asp:ValidationSummary ID="validationSummary" runat="server" ForeColor="#CC0066" />
             </asp:Panel>
         </asp:Panel>
+        </div>
     </asp:Panel>
 </asp:Content>

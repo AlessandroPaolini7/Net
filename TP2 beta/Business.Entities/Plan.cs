@@ -11,5 +11,6 @@ namespace Business.Entities
         public int IDPlan { get; set; }
         public string Descripcion { get; set; }
         public int IDEspecialidad { get; set; }
+        public string EspecialidadDesc { get; set; }
     }
 }

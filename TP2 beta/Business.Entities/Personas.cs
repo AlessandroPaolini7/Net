@@ -26,9 +26,5 @@ namespace Business.Entities
             Alumno,
             Administrador
         }
-
-
-
-
     }
 }

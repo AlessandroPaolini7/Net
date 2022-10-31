@@ -36,6 +36,7 @@ namespace UI.Desktop
                     this.mnuPersona.Visible = false;
                     this.mnuModulo.Visible = false;
                     this.mnuModuloUsuario.Visible = false;
+                    this.mnuReporte.Visible = false;
                     break;
                 default:
                     break;
@@ -136,8 +137,30 @@ namespace UI.Desktop
 
         private void reporteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tsmnuNotas_Click(object sender, EventArgs e)
+        {
             Reporte reporte = new Reporte();
             reporte.ShowDialog();
+        }
+
+        private void cursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteCursos reporteCursos = new ReporteCursos();
+            reporteCursos.ShowDialog();
+        }
+
+        private void planesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportePlanes reportePlanes = new ReportePlanes();
+            reportePlanes.ShowDialog();
         }
     }
 }
