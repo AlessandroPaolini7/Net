@@ -9,14 +9,25 @@ C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\Business.Logic\obj\Debug\Bus
 C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\Business.Logic\obj\Debug\Business.Logic.csproj.CopyComplete
 C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\Business.Logic\obj\Debug\Business.Logic.dll
 C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\Business.Logic\obj\Debug\Business.Logic.pdb
-C:\Users\bauti\source\repos\Net\TP2\Business.Logic\bin\Debug\Business.Logic.dll
-C:\Users\bauti\source\repos\Net\TP2\Business.Logic\bin\Debug\Business.Logic.pdb
-C:\Users\bauti\source\repos\Net\TP2\Business.Logic\bin\Debug\Business.Entities.dll
-C:\Users\bauti\source\repos\Net\TP2\Business.Logic\bin\Debug\Data.Database.dll
-C:\Users\bauti\source\repos\Net\TP2\Business.Logic\bin\Debug\Business.Entities.pdb
-C:\Users\bauti\source\repos\Net\TP2\Business.Logic\bin\Debug\Data.Database.pdb
-C:\Users\bauti\source\repos\Net\TP2\Business.Logic\obj\Debug\Business.Logic.csproj.AssemblyReference.cache
-C:\Users\bauti\source\repos\Net\TP2\Business.Logic\obj\Debug\Business.Logic.csproj.CoreCompileInputs.cache
-C:\Users\bauti\source\repos\Net\TP2\Business.Logic\obj\Debug\Business.Logic.csproj.CopyComplete
-C:\Users\bauti\source\repos\Net\TP2\Business.Logic\obj\Debug\Business.Logic.dll
-C:\Users\bauti\source\repos\Net\TP2\Business.Logic\obj\Debug\Business.Logic.pdb
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Logic\bin\Debug\Business.Logic.dll
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Logic\bin\Debug\Business.Logic.pdb
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Logic\bin\Debug\Business.Entities.dll
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Logic\bin\Debug\Data.Database.dll
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Logic\bin\Debug\Business.Entities.pdb
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Logic\bin\Debug\Data.Database.pdb
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Logic\obj\Debug\Business.Logic.csproj.AssemblyReference.cache
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Logic\obj\Debug\Business.Logic.csproj.CoreCompileInputs.cache
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Logic\obj\Debug\Business.Logic.csproj.CopyComplete
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Logic\obj\Debug\Business.Logic.dll
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Logic\obj\Debug\Business.Logic.pdb
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Logic\bin\Debug\Business.Logic.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Logic\bin\Debug\Business.Logic.pdb
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Logic\bin\Debug\Business.Entities.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Logic\bin\Debug\Data.Database.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Logic\bin\Debug\Business.Entities.pdb
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Logic\bin\Debug\Data.Database.pdb
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Logic\obj\Debug\Business.Logic.csproj.AssemblyReference.cache
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Logic\obj\Debug\Business.Logic.csproj.CoreCompileInputs.cache
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Logic\obj\Debug\Business.Logic.csproj.CopyComplete
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Logic\obj\Debug\Business.Logic.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Logic\obj\Debug\Business.Logic.pdb

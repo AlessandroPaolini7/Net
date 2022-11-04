@@ -25,29 +25,206 @@ C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\UI.Desktop\obj\Debug\UI.Desk
 C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\UI.Desktop\obj\Debug\UI.Desktop.pdb
 C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\UI.Desktop\obj\Debug\UI.Desktop.formComision.resources
 C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\UI.Desktop\obj\Debug\UI.Desktop.ComisionesDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\UI.Desktop.exe
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\UI.Desktop.pdb
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Business.Entities.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Business.Logic.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Data.Database.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Business.Entities.pdb
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Business.Logic.pdb
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Data.Database.pdb
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.csproj.AssemblyReference.cache
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.ApplicationForm.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.ComisionesDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.EspecialidadesDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.formComision.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.formEspecialidad.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.formLista.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.formLogin.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.formMain.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.formPlan.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.PlanesDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.Properties.Resources.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.UsuariosDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.csproj.GenerateResource.cache
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.csproj.CoreCompileInputs.cache
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.csproj.CopyComplete
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.exe
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.pdb
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.formMateria.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.MateriasDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.CursosDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.formCurso.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.formPersona.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.PersonasDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.AlumnoInscripcionesDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.formAlumnoInscripcion.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.formModulo.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.ModulosDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.formModuloUsuario.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.ModuloUsuariosDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.Reporte.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\EnvDTE.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\stdole.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\Microsoft.MSXML.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.ReporteCursos.resources
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\RdlCompile.cache
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\RdlCompile.compiled
+C:\Users\bauti\source\repos\Net\TP2 beta\UI.Desktop\obj\Debug\UI.Desktop.ReportePlanes.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\UI.Desktop.pdb
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Business.Entities.dll
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Business.Logic.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Microsoft.SqlServer.Types.dll
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Data.Database.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\EnvDTE.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\stdole.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Microsoft.MSXML.dll
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Business.Entities.pdb
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Business.Logic.pdb
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\Data.Database.pdb
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.AssemblyReference.cache
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.ApplicationForm.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.AlumnoInscripcionesDesktop.resources
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.ComisionesDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.CursosDesktop.resources
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.EspecialidadesDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formAlumnoInscripcion.resources
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formComision.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formCurso.resources
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formEspecialidad.resources
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formLista.resources
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formLogin.resources
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formMain.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formMateria.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formModulo.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formModuloUsuario.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formPersona.resources
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.formPlan.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.MateriasDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.ModulosDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.ModuloUsuariosDesktop.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.PersonasDesktop.resources
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.PlanesDesktop.resources
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.Properties.Resources.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.Reporte.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.ReporteCursos.resources
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.ReportePlanes.resources
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.UsuariosDesktop.resources
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.GenerateResource.cache
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\RdlCompile.cache
+C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\RdlCompile.compiled
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.CoreCompileInputs.cache
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.CopyComplete
 C:\Users\bauti\source\repos\Net\TP2\UI.Desktop\obj\Debug\UI.Desktop.exe

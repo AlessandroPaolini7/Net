@@ -29,7 +29,13 @@ namespace UI.Desktop
         public void Listar()
         {
             ComisionLogic cl = new ComisionLogic();
-            this.dgvComisiones.DataSource = cl.GetAll();
+            List<Business.Entities.Comision> comisiones = cl.GetAll();
+            foreach(Comision com in comisiones)
+            {
+                com.PlanDesc = com.Plan.Descripcion;
+
+            }
+            this.dgvComisiones.DataSource = comisiones;
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -72,6 +78,11 @@ namespace UI.Desktop
 
             }
             else MessageBox.Show("Error", "No ha seleccionado ninguna comision", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void dgvComisiones_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

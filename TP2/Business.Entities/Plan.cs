@@ -10,6 +10,8 @@ namespace Business.Entities
     {
         public int IDPlan { get; set; }
         public string Descripcion { get; set; }
+        public Especialidad Especialidad { get; set; }
+        public string EspecialidadDesc { get; set; }
         public int IDEspecialidad { get; set; }
     }
 }

@@ -19,28 +19,73 @@ namespace Business.Logic
 
         public List<Usuario> GetAll()
         {
-            return UsuarioData.GetAll();
+            try
+            {
+                return UsuarioData.GetAll();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public Usuario GetOne(int ID)
         {
-            return UsuarioData.GetOne(ID);
+            try
+            {
+                return UsuarioData.GetOne(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Delete(int ID)
         {
-            UsuarioData.Delete(ID);
+            try
+            {
+                UsuarioData.Delete(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Save(Usuario user)
         {
-            UsuarioData.Save(user);
+            try
+            {
+
+                UsuarioData.Save(user);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
 
         public Usuario BuscarPorNombre(string nombre)
         {
-            return UsuarioData.BuscarPorNombre(nombre);
+            try
+            {
+                return UsuarioData.BuscarPorNombre(nombre);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
 

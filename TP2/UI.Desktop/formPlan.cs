@@ -27,7 +27,15 @@ namespace UI.Desktop
         public void Listar()
         {
             PlanLogic pl = new PlanLogic();
-            this.dgvPlanes.DataSource = pl.GetAll();
+            List<Business.Entities.Plan> planes = pl.GetAll();
+            foreach (Plan plan in planes)
+            {
+                EspecialidadLogic especialidadLogic = new EspecialidadLogic();
+                plan.EspecialidadDesc = plan.Especialidad.Descripcion;
+
+            }
+            this.dgvPlanes.DataSource = planes;
+
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -70,6 +78,11 @@ namespace UI.Desktop
 
             }
             else MessageBox.Show("Error", "No ha seleccionado ningun plan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void tcPlanes_TopToolStripPanel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

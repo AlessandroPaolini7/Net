@@ -4,9 +4,15 @@ C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\Business.Entities\obj\Debug\
 C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\Business.Entities\obj\Debug\Business.Entities.csproj.CoreCompileInputs.cache
 C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\Business.Entities\obj\Debug\Business.Entities.dll
 C:\Users\bauti\source\mis repos\U4.TP2.Lab5.ABMPlan\Business.Entities\obj\Debug\Business.Entities.pdb
-C:\Users\bauti\source\repos\Net\TP2\Business.Entities\bin\Debug\Business.Entities.dll
-C:\Users\bauti\source\repos\Net\TP2\Business.Entities\bin\Debug\Business.Entities.pdb
-C:\Users\bauti\source\repos\Net\TP2\Business.Entities\obj\Debug\Business.Entities.csproj.AssemblyReference.cache
-C:\Users\bauti\source\repos\Net\TP2\Business.Entities\obj\Debug\Business.Entities.csproj.CoreCompileInputs.cache
-C:\Users\bauti\source\repos\Net\TP2\Business.Entities\obj\Debug\Business.Entities.dll
-C:\Users\bauti\source\repos\Net\TP2\Business.Entities\obj\Debug\Business.Entities.pdb
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Entities\bin\Debug\Business.Entities.dll
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Entities\bin\Debug\Business.Entities.pdb
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Entities\obj\Debug\Business.Entities.csproj.AssemblyReference.cache
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Entities\obj\Debug\Business.Entities.csproj.CoreCompileInputs.cache
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Entities\obj\Debug\Business.Entities.dll
+C:\Users\bauti\source\mis repos\ownCode\U5.TP2.Lab6.ABMUsuario\Business.Entities\obj\Debug\Business.Entities.pdb
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Entities\bin\Debug\Business.Entities.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Entities\bin\Debug\Business.Entities.pdb
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Entities\obj\Debug\Business.Entities.csproj.AssemblyReference.cache
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Entities\obj\Debug\Business.Entities.csproj.CoreCompileInputs.cache
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Entities\obj\Debug\Business.Entities.dll
+C:\Users\bauti\source\repos\Net\TP2 beta\Business.Entities\obj\Debug\Business.Entities.pdb

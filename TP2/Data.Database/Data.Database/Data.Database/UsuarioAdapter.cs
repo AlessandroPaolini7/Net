@@ -33,6 +33,10 @@ namespace Data.Database
                     user.Apellido = (string)drUsuarios["apellido"];
                     user.Email = (string)drUsuarios["email"];
 
+                    PersonaAdapter personaData = new PersonaAdapter();
+                    user.Persona = personaData.GetOne((int)drUsuarios["id_persona"]);
+
+
                     usuarios.Add(user);
                 }
 
@@ -70,6 +74,8 @@ namespace Data.Database
                     user.Nombre = (string)drUsuarios["nombre"];
                     user.Apellido = (string)drUsuarios["apellido"];
                     user.Email = (string)drUsuarios["email"];
+                    PersonaAdapter personaData = new PersonaAdapter();
+                    user.Persona = personaData.GetOne((int)drUsuarios["id_persona"]);
                 }
                 drUsuarios.Close();
             }
@@ -113,7 +119,7 @@ namespace Data.Database
             {
                 this.OpenConnection();
                 SqlCommand cmdSave = new SqlCommand("UPDATE usuarios SET nombre_usuario=@nombre_usuario, clave=@clave, "+
-                    "habilitado=@habilitado, nombre=@nombre, apellido=@apellido, email=@email "+
+                    "habilitado=@habilitado, nombre=@nombre, apellido=@apellido, email=@email, id_persona=@id_persona "+
                     "WHERE id_usuario=@id", sqlConn);
 
                 cmdSave.Parameters.Add("@id",SqlDbType.Int).Value = usuario.ID;
@@ -123,6 +129,8 @@ namespace Data.Database
                 cmdSave.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = usuario.Nombre;
                 cmdSave.Parameters.Add("@apellido", SqlDbType.VarChar, 50).Value = usuario.Apellido;
                 cmdSave.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = usuario.Email;
+                cmdSave.Parameters.Add("@id_persona", SqlDbType.Int).Value = usuario.Persona.IDPersona;
+
 
                 cmdSave.ExecuteNonQuery();
 
@@ -144,8 +152,8 @@ namespace Data.Database
             try
             {
                 this.OpenConnection();
-                SqlCommand cmdSave = new SqlCommand("INSERT INTO usuarios(nombre_usuario,clave,habilitado,nombre,apellido,email) "+
-                    "values(@nombre_usuario,@clave,@habilitado,@nombre,@apellido,@email) "+
+                SqlCommand cmdSave = new SqlCommand("INSERT INTO usuarios(nombre_usuario,clave,habilitado,nombre,apellido,email, id_persona) "+
+                    "values(@nombre_usuario,@clave,@habilitado,@nombre,@apellido,@email,@id_persona) " +
                     "select @@identity", sqlConn);
 
                 cmdSave.Parameters.Add("@nombre_usuario", SqlDbType.VarChar, 50).Value = usuario.NombreUsuario;
@@ -154,6 +162,8 @@ namespace Data.Database
                 cmdSave.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = usuario.Nombre;
                 cmdSave.Parameters.Add("@apellido", SqlDbType.VarChar, 50).Value = usuario.Apellido;
                 cmdSave.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = usuario.Email;
+                cmdSave.Parameters.Add("@id_persona", SqlDbType.Int).Value = usuario.Persona.IDPersona;
+
                 usuario.ID = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
             }
             catch (Exception ex)
@@ -169,19 +179,27 @@ namespace Data.Database
 
         public void Save(Usuario usuario)
         {
-            if(usuario.State == BusinessEntity.States.Deleted)
+            try
             {
-                this.Delete(usuario.ID);
-            }     
-            else if(usuario.State == BusinessEntity.States.New)
-            {
-                this.Insert(usuario);
+                if (usuario.State == BusinessEntity.States.Deleted)
+                {
+                    this.Delete(usuario.ID);
+                }
+                else if (usuario.State == BusinessEntity.States.New)
+                {
+                    this.Insert(usuario);
+                }
+                else if (usuario.State == BusinessEntity.States.Modified)
+                {
+                    this.Update(usuario);
+                }
+                usuario.State = BusinessEntity.States.Unmodified;
             }
-            else if(usuario.State == BusinessEntity.States.Modified)
+            catch (Exception)
             {
-                this.Update(usuario);
+
+                throw;
             }
-            usuario.State = BusinessEntity.States.Unmodified;
         }
 
         public Usuario BuscarPorNombre(string nombre)
@@ -204,6 +222,16 @@ namespace Data.Database
                     user.Nombre = (string)drUsuarios["nombre"];
                     user.Apellido = (string)drUsuarios["apellido"];
                     user.Email = (string)drUsuarios["email"];
+                    PersonaAdapter personaData = new PersonaAdapter();
+                    if(drUsuarios["id_persona"] is null)
+                    {
+                        user.Persona = null;
+                    }
+                    else
+                    {
+                        user.Persona = personaData.GetOne((int)drUsuarios["id_persona"]);
+                    }
+                    
                 }
                 drUsuarios.Close();
             }

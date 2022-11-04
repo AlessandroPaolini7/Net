@@ -13,7 +13,6 @@ namespace UI.Desktop
     public partial class PlanesDesktop : UI.Desktop.ApplicationForm
     {
         Plan PlanActual = new Plan();
-        EspecialidadLogic EspecialidadNegocio = new EspecialidadLogic();
         public PlanesDesktop()
         {
             InitializeComponent();
@@ -23,6 +22,9 @@ namespace UI.Desktop
         {
             Modo = modo;
             InitializeComponent();
+
+            EspecialidadLogic especialidadLogic = new EspecialidadLogic();
+            this.cmbEspecialidad.DataSource = especialidadLogic.GetAll();
         }
 
         public PlanesDesktop(int ID, ModoForm modo)
@@ -43,7 +45,10 @@ namespace UI.Desktop
         {
             this.txtID.Text = this.PlanActual.IDPlan.ToString();
             this.txtDescripcion.Text = this.PlanActual.Descripcion;
-            this.txtIDEspecialidad.Text = this.PlanActual.IDEspecialidad.ToString();
+
+            EspecialidadLogic especialidadLogic = new EspecialidadLogic();
+            this.cmbEspecialidad.DataSource = especialidadLogic.GetAll();
+            this.cmbEspecialidad.SelectedItem = (Business.Entities.Especialidad)especialidadLogic.GetOne(this.PlanActual.Especialidad.IDEspecialidad);
 
             if (Modo == ModoForm.Alta | Modo == ModoForm.Modificacion)
             {
@@ -53,7 +58,7 @@ namespace UI.Desktop
             {
                 btnAceptar.Text = "Eliminar";
                 txtDescripcion.ReadOnly = true;
-                txtIDEspecialidad.ReadOnly = true;
+                cmbEspecialidad.Enabled = false;
             }
             else
             {
@@ -67,14 +72,17 @@ namespace UI.Desktop
             {
                 PlanActual = new Business.Entities.Plan();
                 PlanActual.Descripcion = this.txtDescripcion.Text;
-                PlanActual.IDEspecialidad = Convert.ToInt32((this.txtIDEspecialidad.Text));
+
+                EspecialidadLogic especialidadLogic = new EspecialidadLogic();
+                PlanActual.Especialidad = especialidadLogic.GetOne(Convert.ToInt32(this.cmbEspecialidad.SelectedValue));
 
                 PlanActual.State = BusinessEntity.States.New;
             }
             if (Modo == ModoForm.Modificacion)
             {
                 PlanActual.Descripcion = this.txtDescripcion.Text;
-                PlanActual.IDEspecialidad = Convert.ToInt32((this.txtIDEspecialidad.Text));
+                EspecialidadLogic especialidadLogic = new EspecialidadLogic();
+                PlanActual.Especialidad = especialidadLogic.GetOne(Convert.ToInt32(this.cmbEspecialidad.SelectedValue));
                 PlanActual.State = BusinessEntity.States.Modified;
             }
             if (Modo == ModoForm.Baja)
@@ -85,23 +93,24 @@ namespace UI.Desktop
 
         public override void GuardarCambios()
         {
-            this.MapearADatos();
+            try
+            {
+                this.MapearADatos();
 
-            PlanLogic pl = new PlanLogic();
-            pl.Save(PlanActual);
+                PlanLogic pl = new PlanLogic();
+                pl.Save(PlanActual);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
         public override bool Validar()
         {
-       
-            if ((this.txtDescripcion.Text != "")&(this.txtIDEspecialidad.Text != ""))
-            {
-                var EspecialidadActual = EspecialidadNegocio.GetOne(Convert.ToInt32(txtIDEspecialidad.Text));
-                if (EspecialidadActual != null) return true;
-                else return false;
-            }
-            return false;
-            
-
+            if ((this.txtDescripcion == null)) return false;
+            else return true;
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -120,6 +129,11 @@ namespace UI.Desktop
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -12,7 +12,7 @@ namespace UI.Desktop
 {
     public partial class UsuariosDesktop : UI.Desktop.ApplicationForm
     {
-        public Business.Entities.Usuario UsuarioActual { get; set; }
+        Business.Entities.Usuario UsuarioActual = new Business.Entities.Usuario();
         public UsuariosDesktop()
         {
             InitializeComponent();
@@ -21,6 +21,8 @@ namespace UI.Desktop
         {
             Modo = modo;
             InitializeComponent();
+            PersonaLogic personaLogic = new PersonaLogic();
+            this.cmbPersona.DataSource = personaLogic.GetAll();
         }
         public UsuariosDesktop(int ID, ModoForm modo)
         {
@@ -44,6 +46,10 @@ namespace UI.Desktop
             this.txtEmail.Text = this.UsuarioActual.Email;
             this.txtUsuario.Text = this.UsuarioActual.NombreUsuario;
             this.txtClave.Text = this.UsuarioActual.Clave;
+            PersonaLogic personaLogic = new PersonaLogic();
+            this.cmbPersona.DataSource = personaLogic.GetAll();
+            this.cmbPersona.SelectedItem = (Business.Entities.Personas)personaLogic.GetOne(this.UsuarioActual.Persona.IDPersona);
+
             if (Modo == ModoForm.Alta | Modo == ModoForm.Modificacion)
             {
                 btnAceptar.Text = "Guardar";
@@ -57,6 +63,7 @@ namespace UI.Desktop
                 txtUsuario.ReadOnly = true;
                 chkHabilitado.Enabled = false;
                 txtClave.ReadOnly = true;
+                cmbPersona.Enabled = false;
             }
             else
             {
@@ -74,6 +81,8 @@ namespace UI.Desktop
                 UsuarioActual.Email = this.txtEmail.Text;
                 UsuarioActual.Clave = this.txtClave.Text;
                 UsuarioActual.NombreUsuario = this.txtUsuario.Text;
+                PersonaLogic personaLogic = new PersonaLogic();
+                UsuarioActual.Persona = personaLogic.GetOne(Convert.ToInt32(this.cmbPersona.SelectedValue));
                 UsuarioActual.State = BusinessEntity.States.New;
             }
             if (Modo == ModoForm.Modificacion)
@@ -83,6 +92,9 @@ namespace UI.Desktop
                 UsuarioActual.Email = this.txtEmail.Text;
                 UsuarioActual.Clave = this.txtClave.Text;
                 UsuarioActual.NombreUsuario = this.txtUsuario.Text;
+
+                PersonaLogic personaLogic = new PersonaLogic();
+                UsuarioActual.Persona = personaLogic.GetOne(Convert.ToInt32(this.cmbPersona.SelectedValue));
                 UsuarioActual.State = BusinessEntity.States.Modified;
             }
             if (Modo == ModoForm.Baja)
@@ -94,10 +106,19 @@ namespace UI.Desktop
         }
         public override void GuardarCambios()
         {
-            this.MapearADatos();
+            try
+            {
+                this.MapearADatos();
+                UsuarioLogic ul = new UsuarioLogic();
+                ul.Save(UsuarioActual);
+            }
+            catch (Exception ex)
+            {
 
-            UsuarioLogic ul = new UsuarioLogic();
-            ul.Save(UsuarioActual);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            
 
         }
         public override bool Validar()

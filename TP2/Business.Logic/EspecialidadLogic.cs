@@ -19,22 +19,58 @@ namespace Business.Logic
 
         public List<Especialidad> GetAll()
         {
-            return EspecialidadData.GetAll();
+            try
+            {
+                return EspecialidadData.GetAll();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         
         public Especialidad GetOne(int ID)
         {
-            return EspecialidadData.GetOne(ID);
+            try
+            {
+                return EspecialidadData.GetOne(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Delete(int ID)
         {
-            EspecialidadData.Delete(ID);
+            try
+            {
+                EspecialidadData.Delete(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         public void Save(Especialidad esp)
         {
-            EspecialidadData.Save(esp);
+            try
+            {
+                EspecialidadData.Save(esp);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         
     }

@@ -37,9 +37,9 @@ namespace UI.Desktop
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtAnioEspecialidad = new System.Windows.Forms.TextBox();
-            this.txtIDPlan = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.cmbPlan = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,9 +56,9 @@ namespace UI.Desktop
             this.tableLayoutPanel1.Controls.Add(this.txtID, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtDescripcion, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtAnioEspecialidad, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.txtIDPlan, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnAceptar, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.btnCancelar, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.cmbPlan, 1, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -103,9 +103,10 @@ namespace UI.Desktop
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 78);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.Size = new System.Drawing.Size(28, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "ID Plan";
+            this.label4.Text = "Plan";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtID
             // 
@@ -132,18 +133,10 @@ namespace UI.Desktop
             this.txtAnioEspecialidad.Size = new System.Drawing.Size(233, 20);
             this.txtAnioEspecialidad.TabIndex = 6;
             // 
-            // txtIDPlan
-            // 
-            this.txtIDPlan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtIDPlan.Location = new System.Drawing.Point(98, 81);
-            this.txtIDPlan.Name = "txtIDPlan";
-            this.txtIDPlan.Size = new System.Drawing.Size(233, 20);
-            this.txtIDPlan.TabIndex = 7;
-            // 
             // btnAceptar
             // 
             this.btnAceptar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAceptar.Location = new System.Drawing.Point(256, 107);
+            this.btnAceptar.Location = new System.Drawing.Point(256, 108);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 8;
@@ -153,13 +146,24 @@ namespace UI.Desktop
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(337, 107);
+            this.btnCancelar.Location = new System.Drawing.Point(337, 108);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // cmbPlan
+            // 
+            this.cmbPlan.DisplayMember = "Descripcion";
+            this.cmbPlan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbPlan.FormattingEnabled = true;
+            this.cmbPlan.Location = new System.Drawing.Point(98, 81);
+            this.cmbPlan.Name = "cmbPlan";
+            this.cmbPlan.Size = new System.Drawing.Size(233, 21);
+            this.cmbPlan.TabIndex = 10;
+            this.cmbPlan.ValueMember = "IDPlan";
             // 
             // ComisionesDesktop
             // 
@@ -172,6 +176,7 @@ namespace UI.Desktop
             this.MinimizeBox = false;
             this.Name = "ComisionesDesktop";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comision";
             this.Load += new System.EventHandler(this.ComisionesDesktop_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -190,8 +195,8 @@ namespace UI.Desktop
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtAnioEspecialidad;
-        private System.Windows.Forms.TextBox txtIDPlan;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.ComboBox cmbPlan;
     }
 }

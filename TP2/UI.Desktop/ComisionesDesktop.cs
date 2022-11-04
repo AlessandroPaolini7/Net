@@ -13,8 +13,7 @@ namespace UI.Desktop
 {
     public partial class ComisionesDesktop : UI.Desktop.ApplicationForm
     {
-        Comision ComisionActual = new Comision();
-        PlanLogic PlanNegocio = new PlanLogic();
+        Business.Entities.Comision ComisionActual = new Business.Entities.Comision();
         public ComisionesDesktop()
         {
             InitializeComponent();
@@ -24,6 +23,8 @@ namespace UI.Desktop
         {
             Modo = modo;
             InitializeComponent();
+            PlanLogic planLogic = new PlanLogic();
+            this.cmbPlan.DataSource = planLogic.GetAll();
         }
 
         public ComisionesDesktop(int ID, ModoForm modo)
@@ -45,7 +46,9 @@ namespace UI.Desktop
         {
             this.txtID.Text = this.ComisionActual.IDComision.ToString();
             this.txtDescripcion.Text = this.ComisionActual.Descripcion;
-            this.txtIDPlan.Text = this.ComisionActual.IDPlan.ToString();
+            PlanLogic planLogic = new PlanLogic();
+            this.cmbPlan.DataSource = planLogic.GetAll();
+            this.cmbPlan.SelectedItem = (Business.Entities.Plan)planLogic.GetOne(this.ComisionActual.Plan.IDPlan);
             this.txtAnioEspecialidad.Text = this.ComisionActual.AnioEspecialidad.ToString();
 
 
@@ -57,7 +60,7 @@ namespace UI.Desktop
             {
                 btnAceptar.Text = "Eliminar";
                 txtDescripcion.ReadOnly = true;
-                txtIDPlan.ReadOnly = true;
+                cmbPlan.Enabled = false;
                 txtAnioEspecialidad.ReadOnly = true;
             }
             else
@@ -72,7 +75,8 @@ namespace UI.Desktop
             {
                 ComisionActual = new Business.Entities.Comision();
                 ComisionActual.Descripcion = this.txtDescripcion.Text;
-                ComisionActual.IDPlan = Convert.ToInt32((this.txtIDPlan.Text));
+                PlanLogic planLogic = new PlanLogic();
+                ComisionActual.Plan = planLogic.GetOne(Convert.ToInt32(this.cmbPlan.SelectedValue));
                 ComisionActual.AnioEspecialidad = Convert.ToInt32((this.txtAnioEspecialidad.Text));
 
 
@@ -81,7 +85,8 @@ namespace UI.Desktop
             if (Modo == ModoForm.Modificacion)
             {
                 ComisionActual.Descripcion = this.txtDescripcion.Text;
-                ComisionActual.IDPlan = Convert.ToInt32((this.txtIDPlan.Text));
+                PlanLogic planLogic = new PlanLogic();
+                ComisionActual.Plan = planLogic.GetOne(Convert.ToInt32(this.cmbPlan.SelectedValue));
                 ComisionActual.AnioEspecialidad = Convert.ToInt32((this.txtAnioEspecialidad.Text));
                 ComisionActual.State = BusinessEntity.States.Modified;
             }
@@ -93,31 +98,25 @@ namespace UI.Desktop
 
         public override void GuardarCambios()
         {
-            this.MapearADatos();
+            try
+            {
+                this.MapearADatos();
 
-            ComisionLogic cl = new ComisionLogic();
-            cl.Save(ComisionActual);
+                ComisionLogic cl = new ComisionLogic();
+                cl.Save(ComisionActual);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         public override bool Validar()
         {
-            if ((this.txtDescripcion.Text != "") & (this.txtIDPlan.Text != "")& (this.txtAnioEspecialidad.Text != ""))
-            {
-                var PlanActual = PlanNegocio.GetOne(Convert.ToInt32(txtIDPlan.Text));
-                if (PlanActual != null) return true;
-                else return false;
-            }
-            return false;
-
-            /*
-            if ((this.txtDescripcion.Text != "") & (this.txtIDEspecialidad.Text != ""))
-            {
-                var EspecialidadActual = EspecialidadNegocio.GetOne(Convert.ToInt32(txtIDEspecialidad.Text));
-                if (EspecialidadActual != null) return true;
-                else return false;
-            }
-            return false;
-            */
+            if ((this.txtDescripcion == null) | (this.txtAnioEspecialidad.Text == "")) return false;
+            else return true;
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -136,6 +135,11 @@ namespace UI.Desktop
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -18,22 +18,58 @@ namespace Business.Logic
 
         public List<Comision> GetAll()
         {
-            return ComisionData.GetAll();
+            try
+            {
+                return ComisionData.GetAll();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
 
         public Comision GetOne(int ID)
         {
-            return ComisionData.GetOne(ID);
+            try
+            {
+                return ComisionData.GetOne(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Delete(int ID)
         {
-            ComisionData.Delete(ID);
+            try
+            {
+                ComisionData.Delete(ID);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         public void Save(Comision comision)
         {
-            ComisionData.Save(comision);
+            try
+            {
+                ComisionData.Save(comision);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
     }

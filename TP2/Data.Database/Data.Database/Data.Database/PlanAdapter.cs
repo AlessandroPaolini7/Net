@@ -29,9 +29,9 @@ namespace Data.Database
 
                     plan.IDPlan = (int)drPlanes["id_plan"];
                     plan.Descripcion = (string)drPlanes["desc_plan"];
-                    plan.IDEspecialidad = (int)drPlanes["id_especialidad"];
 
-
+                    EspecialidadAdapter especialidadData = new EspecialidadAdapter();
+                    plan.Especialidad = especialidadData.GetOne((int)drPlanes["id_especialidad"]);
 
                     planes.Add(plan);
                 }
@@ -66,7 +66,8 @@ namespace Data.Database
                 if (drPlanes.Read())
                 {
                     plan.IDPlan = (int)drPlanes["id_plan"];
-                    plan.IDEspecialidad = (int)drPlanes["id_especialidad"];
+                    EspecialidadAdapter especialidadData = new EspecialidadAdapter();
+                    plan.Especialidad = especialidadData.GetOne((int)drPlanes["id_especialidad"]);
                     plan.Descripcion = (string)drPlanes["desc_plan"];
                 }
                 drPlanes.Close();
@@ -112,7 +113,7 @@ namespace Data.Database
                 this.OpenConnection();
                 SqlCommand cmdSave = new SqlCommand("UPDATE planes SET desc_plan=@descripcion, id_especialidad=@id_esp " +
                     "WHERE id_plan=@id", sqlConn);
-                cmdSave.Parameters.Add("@id_esp", SqlDbType.Int).Value = plan.IDEspecialidad;
+                cmdSave.Parameters.Add("@id_esp", SqlDbType.Int).Value = plan.Especialidad.IDEspecialidad;
                 cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = plan.IDPlan;
                 cmdSave.Parameters.Add("@descripcion", SqlDbType.VarChar, 50).Value = plan.Descripcion;
 
@@ -141,7 +142,7 @@ namespace Data.Database
                     "select @@identity", sqlConn);
 
                 cmdSave.Parameters.Add("@descripcion", SqlDbType.VarChar, 50).Value = plan.Descripcion;
-                cmdSave.Parameters.Add("@id_esp", SqlDbType.Int).Value = plan.IDEspecialidad;
+                cmdSave.Parameters.Add("@id_esp", SqlDbType.Int).Value = plan.Especialidad.IDEspecialidad;
 
                 plan.IDPlan = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
             }
@@ -159,19 +160,27 @@ namespace Data.Database
 
         public void Save(Plan plan)
         {
-            if (plan.State == BusinessEntity.States.Deleted)
+            try
             {
-                this.Delete(plan.IDPlan);
+                if (plan.State == BusinessEntity.States.Deleted)
+                {
+                    this.Delete(plan.IDPlan);
+                }
+                else if (plan.State == BusinessEntity.States.New)
+                {
+                    this.Insert(plan);
+                }
+                else if (plan.State == BusinessEntity.States.Modified)
+                {
+                    this.Update(plan);
+                }
+                plan.State = BusinessEntity.States.Unmodified;
             }
-            else if (plan.State == BusinessEntity.States.New)
+            catch (Exception)
             {
-                this.Insert(plan);
+
+                throw;
             }
-            else if (plan.State == BusinessEntity.States.Modified)
-            {
-                this.Update(plan);
-            }
-            plan.State = BusinessEntity.States.Unmodified;
         }
     }
 }
