@@ -9,6 +9,11 @@
         <link href="~/Login_Style.css" rel="stylesheet" />
 </head>
 <body>
+    <script>
+        window.location.hash = "no-back-button";
+        window.location.hash = "Again-No-back-button";
+        window.onhashchange = function () { window.location.hash = "";}
+    </script>
     <form id="form1" runat="server">
         <div class="login-box">
             <img src="Stock/school (1).png" class="avatar" alt="Avatar Image" />

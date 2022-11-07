@@ -16,3 +16,9 @@ C:\Users\bauti\source\repos\Net\TP2 beta\Business.Entities\obj\Debug\Business.En
 C:\Users\bauti\source\repos\Net\TP2 beta\Business.Entities\obj\Debug\Business.Entities.csproj.CoreCompileInputs.cache
 C:\Users\bauti\source\repos\Net\TP2 beta\Business.Entities\obj\Debug\Business.Entities.dll
 C:\Users\bauti\source\repos\Net\TP2 beta\Business.Entities\obj\Debug\Business.Entities.pdb
+C:\Users\bauti\source\repos\Net\TP2\Business.Entities\bin\Debug\Business.Entities.dll
+C:\Users\bauti\source\repos\Net\TP2\Business.Entities\bin\Debug\Business.Entities.pdb
+C:\Users\bauti\source\repos\Net\TP2\Business.Entities\obj\Debug\Business.Entities.csproj.AssemblyReference.cache
+C:\Users\bauti\source\repos\Net\TP2\Business.Entities\obj\Debug\Business.Entities.csproj.CoreCompileInputs.cache
+C:\Users\bauti\source\repos\Net\TP2\Business.Entities\obj\Debug\Business.Entities.dll
+C:\Users\bauti\source\repos\Net\TP2\Business.Entities\obj\Debug\Business.Entities.pdb

@@ -52,72 +52,80 @@ namespace UI.Desktop
             // txtID
             // 
             this.txtID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtID.Location = new System.Drawing.Point(76, 3);
+            this.txtID.Location = new System.Drawing.Point(98, 4);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(295, 20);
+            this.txtID.Size = new System.Drawing.Size(397, 22);
             this.txtID.TabIndex = 7;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 149);
+            this.label7.Location = new System.Drawing.Point(4, 181);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 13);
+            this.label7.Size = new System.Drawing.Size(63, 17);
             this.label7.TabIndex = 6;
             this.label7.Text = "Consulta";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 126);
+            this.label6.Location = new System.Drawing.Point(4, 152);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 13);
+            this.label6.Size = new System.Drawing.Size(86, 17);
             this.label6.TabIndex = 5;
             this.label6.Text = "Modificacion";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 103);
+            this.label5.Location = new System.Drawing.Point(4, 123);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 13);
+            this.label5.Size = new System.Drawing.Size(36, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Baja";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 80);
+            this.label4.Location = new System.Drawing.Point(4, 94);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(25, 13);
+            this.label4.Size = new System.Drawing.Size(32, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "Alta";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 53);
+            this.label3.Location = new System.Drawing.Point(4, 62);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.Size = new System.Drawing.Size(54, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Modulo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 26);
+            this.label2.Location = new System.Drawing.Point(4, 30);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(57, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Usuario";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(4, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.Size = new System.Drawing.Size(21, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
@@ -145,6 +153,7 @@ namespace UI.Desktop
             this.tableLayoutPanel1.Controls.Add(this.btnCancelar, 2, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -155,15 +164,16 @@ namespace UI.Desktop
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(455, 202);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(607, 249);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // chkAlta
             // 
             this.chkAlta.AutoSize = true;
-            this.chkAlta.Location = new System.Drawing.Point(76, 83);
+            this.chkAlta.Location = new System.Drawing.Point(98, 98);
+            this.chkAlta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkAlta.Name = "chkAlta";
-            this.chkAlta.Size = new System.Drawing.Size(80, 17);
+            this.chkAlta.Size = new System.Drawing.Size(98, 21);
             this.chkAlta.TabIndex = 8;
             this.chkAlta.Text = "checkBox1";
             this.chkAlta.UseVisualStyleBackColor = true;
@@ -171,9 +181,10 @@ namespace UI.Desktop
             // chkBaja
             // 
             this.chkBaja.AutoSize = true;
-            this.chkBaja.Location = new System.Drawing.Point(76, 106);
+            this.chkBaja.Location = new System.Drawing.Point(98, 127);
+            this.chkBaja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkBaja.Name = "chkBaja";
-            this.chkBaja.Size = new System.Drawing.Size(80, 17);
+            this.chkBaja.Size = new System.Drawing.Size(98, 21);
             this.chkBaja.TabIndex = 9;
             this.chkBaja.Text = "checkBox2";
             this.chkBaja.UseVisualStyleBackColor = true;
@@ -181,9 +192,10 @@ namespace UI.Desktop
             // chkModificacion
             // 
             this.chkModificacion.AutoSize = true;
-            this.chkModificacion.Location = new System.Drawing.Point(76, 129);
+            this.chkModificacion.Location = new System.Drawing.Point(98, 156);
+            this.chkModificacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkModificacion.Name = "chkModificacion";
-            this.chkModificacion.Size = new System.Drawing.Size(80, 17);
+            this.chkModificacion.Size = new System.Drawing.Size(98, 21);
             this.chkModificacion.TabIndex = 10;
             this.chkModificacion.Text = "checkBox3";
             this.chkModificacion.UseVisualStyleBackColor = true;
@@ -191,9 +203,10 @@ namespace UI.Desktop
             // chkConsulta
             // 
             this.chkConsulta.AutoSize = true;
-            this.chkConsulta.Location = new System.Drawing.Point(76, 152);
+            this.chkConsulta.Location = new System.Drawing.Point(98, 185);
+            this.chkConsulta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkConsulta.Name = "chkConsulta";
-            this.chkConsulta.Size = new System.Drawing.Size(80, 17);
+            this.chkConsulta.Size = new System.Drawing.Size(98, 21);
             this.chkConsulta.TabIndex = 11;
             this.chkConsulta.Text = "checkBox4";
             this.chkConsulta.UseVisualStyleBackColor = true;
@@ -202,10 +215,12 @@ namespace UI.Desktop
             // 
             this.cmbUsuarios.DisplayMember = "Nombre";
             this.cmbUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbUsuarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUsuarios.FormattingEnabled = true;
-            this.cmbUsuarios.Location = new System.Drawing.Point(76, 29);
+            this.cmbUsuarios.Location = new System.Drawing.Point(98, 34);
+            this.cmbUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbUsuarios.Name = "cmbUsuarios";
-            this.cmbUsuarios.Size = new System.Drawing.Size(295, 21);
+            this.cmbUsuarios.Size = new System.Drawing.Size(397, 24);
             this.cmbUsuarios.TabIndex = 12;
             this.cmbUsuarios.ValueMember = "ID";
             // 
@@ -213,19 +228,22 @@ namespace UI.Desktop
             // 
             this.cmbModulos.DisplayMember = "Descripcion";
             this.cmbModulos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbModulos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbModulos.FormattingEnabled = true;
-            this.cmbModulos.Location = new System.Drawing.Point(76, 56);
+            this.cmbModulos.Location = new System.Drawing.Point(98, 66);
+            this.cmbModulos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbModulos.Name = "cmbModulos";
-            this.cmbModulos.Size = new System.Drawing.Size(295, 21);
+            this.cmbModulos.Size = new System.Drawing.Size(397, 24);
             this.cmbModulos.TabIndex = 13;
             this.cmbModulos.ValueMember = "IDModulo";
             // 
             // btnAceptar
             // 
             this.btnAceptar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAceptar.Location = new System.Drawing.Point(296, 176);
+            this.btnAceptar.Location = new System.Drawing.Point(395, 217);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar.Size = new System.Drawing.Size(100, 28);
             this.btnAceptar.TabIndex = 14;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
@@ -234,9 +252,10 @@ namespace UI.Desktop
             // btnCancelar
             // 
             this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelar.Location = new System.Drawing.Point(377, 176);
+            this.btnCancelar.Location = new System.Drawing.Point(503, 217);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(100, 28);
             this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -244,9 +263,10 @@ namespace UI.Desktop
             // 
             // ModuloUsuariosDesktop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(455, 202);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ClientSize = new System.Drawing.Size(607, 249);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "ModuloUsuariosDesktop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modulo usuario";

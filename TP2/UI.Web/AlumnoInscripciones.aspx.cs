@@ -92,23 +92,28 @@ namespace UI.Web
 
         protected new void Page_Load(object sender, EventArgs e)
         {
-            UsuarioLogic usuarioLogic = new UsuarioLogic();
-            usuarioActual = usuarioLogic.GetOne(Convert.ToInt32(this.Session["UserID"]));
-            if (usuarioActual.Persona.TipoPersona == Business.Entities.Personas.TipoPersonas.Alumno)
+            if (this.Session["UserID"] != null)
             {
-                this.editarButton.Visible = false;
-            }
-            else if (usuarioActual.Persona.TipoPersona == Business.Entities.Personas.TipoPersonas.Docente)
-            {
-                this.eliminarButton.Visible = false;
-                this.nuevoButton.Visible = false;
+                UsuarioLogic usuarioLogic = new UsuarioLogic();
+                usuarioActual = usuarioLogic.GetOne(Convert.ToInt32(this.Session["UserID"]));
+                if (usuarioActual.Persona.TipoPersona == Business.Entities.Personas.TipoPersonas.Alumno)
+                {
+                    this.editarButton.Visible = false;
+                }
+                else if (usuarioActual.Persona.TipoPersona == Business.Entities.Personas.TipoPersonas.Docente)
+                {
+                    this.eliminarButton.Visible = false;
+                    this.nuevoButton.Visible = false;
 
-            }
-            if (!this.IsPostBack)
-            {
+                }
+                if (!this.IsPostBack)
+                {
 
-                this.LoadGrid();
+                    this.LoadGrid();
+                }
             }
+            else Response.Redirect("Login.aspx");
+            
         }
 
         protected void gridView_SelectedIndexChanged(object sender, EventArgs e)

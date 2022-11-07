@@ -63,7 +63,25 @@ namespace UI.Web
         }
         protected new void Page_Load(object sender, EventArgs e)
         {
-            if (!this.IsPostBack) this.LoadGrid();
+            if (this.Session["UserID"] != null)
+            {
+                string id_usuario = this.Session["UserID"].ToString();
+                UsuarioLogic ua = new UsuarioLogic();
+                Business.Entities.Usuario usuario = ua.GetOne(Convert.ToInt32(id_usuario));
+                if (usuario.Persona.TipoPersona != Business.Entities.Personas.TipoPersonas.Administrador)
+                {
+                    Response.Redirect("Default.aspx");
+
+                }
+                else if (!this.IsPostBack)
+                {
+                    this.LoadGrid();
+                }
+            }
+            else
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
 
         protected void gridView_SelectedIndexChanged(object sender, EventArgs e)

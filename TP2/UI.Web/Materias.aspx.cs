@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using Business.Entities;
+﻿using Business.Entities;
 using Business.Logic;
+using System;
+using System.Collections.Generic;
+using System.Web.UI.WebControls;
 
 namespace UI.Web
 {
@@ -67,10 +64,14 @@ namespace UI.Web
 
         protected new void Page_Load(object sender, EventArgs e)
         {
-            if (!this.IsPostBack)
+            if (this.Session["UserID"] != null)
             {
-                this.LoadGrid();
+                if (!this.IsPostBack)
+                {
+                    this.LoadGrid();
+                }
             }
+            else Response.Redirect("Login.aspx");
         }
 
         protected void gridView_SelectedIndexChanged(object sender, EventArgs e)

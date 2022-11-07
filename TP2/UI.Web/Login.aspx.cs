@@ -13,7 +13,9 @@ namespace UI.Web
         protected void Page_Load(object sender, EventArgs e)
         {
             UsuarioNegocio = new Business.Logic.UsuarioLogic();
+            this.Session["UserID"] = null;
         }
+                
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {

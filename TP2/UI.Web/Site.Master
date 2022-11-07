@@ -46,6 +46,10 @@
         <li class="d-inline-block navbar-brand">
         <a id="mnuReporteNotas"  runat="server" class="nav-link text-white" href="Reporte.aspx">Reporte notas</a>
       </li>
+        <li class="d-inline-block navbar-brand">
+        <a id="mnuCerrarSesion"  runat="server" class="nav-link text-black-50 " href="Login.aspx">Cerrar Sesion</a>
+      </li>
+
     </ul>
   </div>
 </nav>

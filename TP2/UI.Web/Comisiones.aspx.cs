@@ -61,10 +61,14 @@ namespace UI.Web
 
         protected new void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
+            if (this.Session["UserID"] != null)
             {
-                this.LoadGrid();
+                if (!this.IsPostBack)
+                {
+                    this.LoadGrid();
+                }
             }
+            else Response.Redirect("Login.aspx");
         }
 
         protected void gridView_SelectedIndexChanged(object sender, EventArgs e)
